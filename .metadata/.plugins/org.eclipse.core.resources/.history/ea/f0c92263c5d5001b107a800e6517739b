@@ -1,0 +1,60 @@
+/*
+ * movie.h
+ *
+ *  Created on: 23 jun. 2021
+ *      Author: Juan
+ */
+
+#ifndef BOOK_H_
+#define BOOK_H_
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include "LinkedList.h"
+#include "utn.h"
+#define MAX_NOMBRE 70
+
+typedef struct{
+	int id;
+	char titulo[MAX_NOMBRE];
+	char autor[MAX_NOMBRE];
+	float precio;
+	char editorial[MAX_NOMBRE];
+}eBook;
+
+typedef struct{
+	int dia;
+	char diaSemana[MAX_NOMBRE];
+}eDias;
+
+eBook* eBook_new();
+eBook* eBook_newParametros(char* id,char* titulo,char* autor, char* precio, char* editorial);
+
+int eBook_setId(eBook* this,int id);
+int eBook_getId(eBook* this,int* id);
+
+int eBook_setTitulo(eBook* this,char* titulo);
+int eBook_getTitulo(eBook* this,char* titulo);
+
+
+int eBook_setDia(eBook* this,int dia);
+int eBook_getDia(eBook* this,int* dia);
+
+
+int eBook_setSala(eBook* this,int sala);
+int eBook_getSala(eBook* this,int* sala);
+
+int eBook_setHora(eBook* this,char* horario);
+int eBook_getHora(eBook* this,char* horario);
+
+int eBook_setCantidad(eBook* this,int cantidad);
+int eBook_getCantidad(eBook* this,int* cantidad);
+
+int eBook_getDays (eDias* arrayDias,int dia,char* detalleDia);
+int eBook_setMonto(eBook* this,float monto);
+int eBook_getMonto(eBook* this,float* monto);
+int eBook_getMontoGenrado (eBook* this, int dia,int cantidad, float* monto);
+eBook* eBook_newParametrosInt(int id,char* nombre,int dia, char* horario, int sala, int cantidad, float monto);
+void calcularMonto(void* this);
+int eBook_compareBynombre(void* pThis1, void* pThis2);
+#endif /* BOOK_H_ */

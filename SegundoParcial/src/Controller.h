@@ -1,0 +1,16 @@
+/*
+ * Controller.h
+ *
+ *  Created on: 23 jun. 2021
+ *      Author: Juan
+ */
+
+#ifndef CONTROLLER_H_
+#define CONTROLLER_H_
+
+#include "Parser.h"
+
+int controller_loadFromText(char* path , LinkedList* pArrayListBooks);
+int controller_ListBooks(LinkedList* pArrayListBooks);
+int controller_sort (LinkedList* pArrayListBooks);
+#endif /* CONTROLLER_H_ */

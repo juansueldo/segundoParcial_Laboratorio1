@@ -1,0 +1,167 @@
+Info: Nothing to build for SegundoParcial
+Info: Nothing to build for SegundoParcial
+12:32:00 **** Incremental Build of configuration Debug for project SegundoParcial ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.c" 
+gcc -o SegundoParcial.exe "src\\Controller.o" "src\\LinkedList.o" "src\\Menu.o" "src\\Parser.o" "src\\book.o" "src\\main.o" "src\\utn.o" 
+Info: Nothing to build for SegundoParcial
+12:47:01 **** Incremental Build of configuration Debug for project SegundoParcial ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+gcc -o SegundoParcial.exe "src\\Controller.o" "src\\LinkedList.o" "src\\Menu.o" "src\\Parser.o" "src\\book.o" "src\\main.o" "src\\utn.o" 
+Info: Nothing to build for SegundoParcial
+13:21:08 **** Incremental Build of configuration Debug for project SegundoParcial ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\book.o" "..\\src\\book.c" 
+..\src\book.c:379:1: warning: "/*" within comment [-Wcomment]
+ /*
+  
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Menu.o" "..\\src\\Menu.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+..\src\Controller.c: In function 'controller_sort':
+..\src\Controller.c:94:29: error: 'employee_compareByAutor' undeclared (first use in this function)
+    ll_sort(pArrayListBooks, employee_compareByAutor, orden);
+                             ^~~~~~~~~~~~~~~~~~~~~~~
+..\src\Controller.c:94:29: note: each undeclared identifier is reported only once for each function it appears in
+..\src\Controller.c:89:6: warning: unused variable 'opcionMenu' [-Wunused-variable]
+  int opcionMenu;
+      ^~~~~~~~~~
+13:22:23 **** Incremental Build of configuration Debug for project SegundoParcial ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Parser.o" "..\\src\\Parser.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\book.o" "..\\src\\book.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.c" 
+gcc -o SegundoParcial.exe "src\\Controller.o" "src\\LinkedList.o" "src\\Menu.o" "src\\Parser.o" "src\\book.o" "src\\main.o" "src\\utn.o" 
+Info: Nothing to build for SegundoParcial
+13:24:22 **** Incremental Build of configuration Debug for project SegundoParcial ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+gcc -o SegundoParcial.exe "src\\Controller.o" "src\\LinkedList.o" "src\\Menu.o" "src\\Parser.o" "src\\book.o" "src\\main.o" "src\\utn.o" 
+Info: Nothing to build for SegundoParcial
+13:43:21 **** Incremental Build of configuration Debug for project SegundoParcial ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\book.o" "..\\src\\book.c" 
+In file included from ..\src\book.c:7:0:
+..\src\book.h:52:20: error: unknown type name 'eDias'
+ int eBook_getDays (eDias* arrayDias,int dia,char* detalleDia);
+                    ^~~~~
+..\src\book.c: In function 'eBook_getEditorialId':
+..\src\book.c:181:11: error: switch quantity not an integer
+    switch(editorial)
+           ^~~~~~~~~
+..\src\book.c:183:4: error: case label does not reduce to an integer constant
+    case "PLANETA":
+    ^~~~
+..\src\book.c:186:4: error: case label does not reduce to an integer constant
+    case "SIGLO XXI EDITORES":
+    ^~~~
+..\src\book.c:189:4: error: case label does not reduce to an integer constant
+    case "PEARSON":
+    ^~~~
+..\src\book.c:192:4: error: case label does not reduce to an integer constant
+    case "MINOTAURO":
+    ^~~~
+..\src\book.c:195:4: error: case label does not reduce to an integer constant
+    case "SALAMANDRA":
+    ^~~~
+..\src\book.c:198:4: error: case label does not reduce to an integer constant
+    case "PENGUIN BOOKS":
+    ^~~~
+14:00:18 **** Incremental Build of configuration Debug for project SegundoParcial ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.c" 
+In file included from ..\src\Parser.h:11:0,
+                 from ..\src\Controller.h:11,
+                 from ..\src\main.c:13:
+..\src\book.h:52:20: error: unknown type name 'eDias'
+ int eBook_getDays (eDias* arrayDias,int dia,char* detalleDia);
+                    ^~~~~
+14:00:39 **** Incremental Build of configuration Debug for project SegundoParcial ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\book.o" "..\\src\\book.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+..\src\Controller.c: In function 'controller_ListBooks':
+..\src\Controller.c:71:11: warning: 'editorialId' may be used uninitialized in this function [-Wmaybe-uninitialized]
+           eBook_getEditorialId (pAuxEditorial,editorialId,editorial);
+           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Parser.o" "..\\src\\Parser.c" 
+gcc -o SegundoParcial.exe "src\\Controller.o" "src\\LinkedList.o" "src\\Menu.o" "src\\Parser.o" "src\\book.o" "src\\main.o" "src\\utn.o" 
+Info: Nothing to build for SegundoParcial
+14:27:09 **** Incremental Build of configuration Debug for project SegundoParcial ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\book.o" "..\\src\\book.c" 
+gcc -o SegundoParcial.exe "src\\Controller.o" "src\\LinkedList.o" "src\\Menu.o" "src\\Parser.o" "src\\book.o" "src\\main.o" "src\\utn.o" 
+Info: Nothing to build for SegundoParcial
+14:35:53 **** Incremental Build of configuration Debug for project SegundoParcial ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Parser.o" "..\\src\\Parser.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\book.o" "..\\src\\book.c" 
+gcc -o SegundoParcial.exe "src\\Controller.o" "src\\LinkedList.o" "src\\Menu.o" "src\\Parser.o" "src\\book.o" "src\\main.o" "src\\utn.o" 
+Info: Nothing to build for SegundoParcial
+14:43:27 **** Incremental Build of configuration Debug for project SegundoParcial ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+..\src\Controller.c: In function 'controller_ListBooks':
+..\src\Controller.c:71:11: warning: 'editorialId' may be used uninitialized in this function [-Wmaybe-uninitialized]
+           eBook_getEditorialId (pAuxEditorial,editorialId,editorial);
+           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Parser.o" "..\\src\\Parser.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\book.o" "..\\src\\book.c" 
+..\src\book.c: In function 'eBook_getEditorialId':
+..\src\book.c:184:5: error: invalid type argument of unary '*' (have 'int')
+     *editorialId = 1;
+     ^~~~~~~~~~~~
+..\src\book.c:188:5: error: invalid type argument of unary '*' (have 'int')
+     *editorialId = 2;
+     ^~~~~~~~~~~~
+..\src\book.c:192:5: error: invalid type argument of unary '*' (have 'int')
+     *editorialId =3;
+     ^~~~~~~~~~~~
+..\src\book.c:196:5: error: invalid type argument of unary '*' (have 'int')
+     *editorialId = 4;
+     ^~~~~~~~~~~~
+..\src\book.c:200:5: error: invalid type argument of unary '*' (have 'int')
+     *editorialId = 5;
+     ^~~~~~~~~~~~
+..\src\book.c:204:5: error: invalid type argument of unary '*' (have 'int')
+     *editorialId = 6;
+     ^~~~~~~~~~~~
+14:43:58 **** Incremental Build of configuration Debug for project SegundoParcial ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\book.o" "..\\src\\book.c" 
+gcc -o SegundoParcial.exe "src\\Controller.o" "src\\LinkedList.o" "src\\Menu.o" "src\\Parser.o" "src\\book.o" "src\\main.o" "src\\utn.o" 
+Info: Nothing to build for SegundoParcial
+14:46:02 **** Incremental Build of configuration Debug for project SegundoParcial ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+..\src\Controller.c: In function 'controller_ListBooks':
+..\src\Controller.c:72:15: warning: 'editorialId' may be used uninitialized in this function [-Wmaybe-uninitialized]
+           Aux = eBook_getEditorialId (pAuxEditorial,editorialId,editorial);
+           ~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\book.o" "..\\src\\book.c" 
+..\src\book.c: In function 'eBook_getEditorialId':
+..\src\book.c:206:4: error: 'retorno' undeclared (first use in this function)
+    retorno = 0;
+    ^~~~~~~
+..\src\book.c:206:4: note: each undeclared identifier is reported only once for each function it appears in
+14:46:23 **** Incremental Build of configuration Debug for project SegundoParcial ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\book.o" "..\\src\\book.c" 
+gcc -o SegundoParcial.exe "src\\Controller.o" "src\\LinkedList.o" "src\\Menu.o" "src\\Parser.o" "src\\book.o" "src\\main.o" "src\\utn.o" 
+Info: Nothing to build for SegundoParcial
+15:12:44 **** Incremental Build of configuration Debug for project SegundoParcial ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+..\src\Controller.c: In function 'controller_ListBooks':
+..\src\Controller.c:72:15: warning: 'editorialId' may be used uninitialized in this function [-Wmaybe-uninitialized]
+           Aux = eBook_getEditorialId (pAuxEditorial,editorialId,editorial);
+           ~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gcc -o SegundoParcial.exe "src\\Controller.o" "src\\LinkedList.o" "src\\Menu.o" "src\\Parser.o" "src\\book.o" "src\\main.o" "src\\utn.o" 
+Info: Nothing to build for SegundoParcial
