@@ -1,0 +1,17 @@
+13:07:13 **** Rebuild of configuration Debug for project Laboratorio1_SegundoParcial ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Laboratorio1_SegundoParcial.o" "..\\src\\Laboratorio1_SegundoParcial.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Parser.o" "..\\src\\Parser.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Menu.o" "..\\src\\Menu.c" 
+..\src\Menu.c: In function 'menu_principal':
+..\src\Menu.c:5:6: warning: unused variable 'retorno' [-Wunused-variable]
+  int retorno = -1;
+      ^~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utn.o" "..\\src\\utn.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\LinkedList.o" "..\\src\\LinkedList.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Book.o" "..\\src\\Book.c" 
+gcc -o Laboratorio1_SegundoParcial.exe "src\\Book.o" "src\\Controller.o" "src\\Laboratorio1_SegundoParcial.o" "src\\LinkedList.o" "src\\Menu.o" "src\\Parser.o" "src\\utn.o" 
+
+13:07:22 Build Finished. 0 errors, 1 warnings. (took 8s.195ms)
+

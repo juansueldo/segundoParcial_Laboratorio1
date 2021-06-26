@@ -1,9 +1,3 @@
-/*
- * movie.c
- *
- *  Created on: 23 jun. 2021
- *      Author: Juan
- */
 #include "book.h"
 
 eBook* eBook_new()
@@ -171,43 +165,71 @@ int eBook_compareByAutor(void* pThis1, void* pThis2)
 
     return comparar;
 }
-int eBook_getEditorialId (eEditorial* arrayEditorial,int editorialId,char* editorial)
+int eBook_getEditorialId (eEditorial* arrayEditorial,int* editorialId,char* editorial)
 {
-	//int retorno = -1;
+	int retorno = -1;
 	if(arrayEditorial != NULL && editorial != NULL)
 	{
-		if(arrayEditorial->editorial == editorial)
+		if(strcmp(arrayEditorial->editorial,editorial))
 		{
 			utn_getMayusMin(editorial, MAX_NOMBRE);
 			if(strcmp("Planeta",editorial))
 			{
-				editorialId = 1;
+				*editorialId = 1;
 			}
 			if(strcmp("SIGLO XXI EDITORES",editorial))
 			{
-				editorialId = 2;
+				*editorialId = 2;
 			}
 			if(strcmp("Pearson",editorial))
 			{
-				editorialId =3;
+				*editorialId =3;
 			}
 			if(strcmp("Minotauro",editorial))
 			{
-				editorialId = 4;
+				*editorialId = 4;
 			}
-			if(strcmp("Salamandra",editorial))
+			if(strcmp("SALAMANDRA",editorial))
 			{
-				editorialId = 5;
+				*editorialId = 5;
 			}
-			if(strcmp("Penguin books",editorial))
+			if(strcmp("PENGUIN BOOKS",editorial))
 			{
-				editorialId = 6;
+				*editorialId = 6;
 			}
-			//retorno = 0;
+			retorno = 0;
 		}
 	}
 
-	return editorialId;
+	return retorno;
+}
+void calcularMonto(void* this)
+{
+	char editorial[MAX_NOMBRE];
+	float precio;
+	float precioDescuento;
+	//eEditorial* pAuxEditorial;
+	//int auxIdEditorial;
+	if(this != NULL)
+	{
+		//Planeta: 20% (si el monto es mayor o igual a $300)
+		//* SIGLO XXI EDITORES: 10% (si el monto es menor o igual a $200)
+		eBook_getEditorial(this, editorial);
+		eBook_getPrecio(this, &precio);
+		//eBook_getEditorialId (auxIdEditorial,&auxIdEditorial,editorial);
+
+		if(strcmp(editorial,"Planeta")==0 && precio >= 300)
+		{
+			precioDescuento = precio - (precio * 0.20);
+			eBook_setPrecio(this, precioDescuento);
+		}
+		if(strcmp(editorial,"SIGLO XXI EDITORES")==0 && precio <= 200)
+		{
+			precioDescuento = precio - (precio * 0.10);
+			eBook_setPrecio(this, precioDescuento);
+
+		}
+	}
 }/*
 int eBook_setHora(eBook* this,char* horario)
 {

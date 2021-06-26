@@ -49,7 +49,7 @@ int eBook_getEditorial(eBook* this,char* editorial);
 
 int eBook_compareByAutor(void* pThis1, void* pThis2);
 
-int eBook_getEditorialId (eEditorial* arrayEditorial,int editorialId,char* editorial);
+int eBook_getEditorialId (eEditorial* arrayEditorial,int* editorialId,char* editorial);
 int eBook_setMonto(eBook* this,float monto);
 int eBook_getMonto(eBook* this,float* monto);
 int eBook_getMontoGenrado (eBook* this, int dia,int cantidad, float* monto);

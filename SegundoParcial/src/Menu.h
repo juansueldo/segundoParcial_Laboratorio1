@@ -3,9 +3,7 @@
 #include "utn.h"
 #include <stdio.h>
 
-int menu_principal (int* opcion);
-void menu_editarEmpleado (int *opcion);
-void menu_ordenamiento (int *opcion);
+void menu_principal (int* opcion);
 
 
 #endif /* MENU_H_ */

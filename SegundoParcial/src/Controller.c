@@ -34,7 +34,6 @@ int controller_ListBooks(LinkedList* pArrayListBooks)
 {
     int retorno = -1;
     int i;
-    int j;
     int pantalla = 999;
     int respuesta;
     int respuesta2;
@@ -43,18 +42,15 @@ int controller_ListBooks(LinkedList* pArrayListBooks)
     char autor[MAX_NOMBRE];
     float precio;
     char editorial[MAX_NOMBRE];
-    int editorialId;
-    int Aux;
     eBook* pAuxMovie = eBook_new();
-    eEditorial* pAuxEditorial;
 
     if(pArrayListBooks != NULL)
     {
     	if(ll_len(pArrayListBooks)>0)
     	{
-        printf("|*******|**************************************************************|**************|************|************|\n");
-        printf("|   ID  |                        TITULO                                |    AUTOR     |   PRECIO   |  EDITORIAL |\n");
-        printf("|*******|**************************************************************|**************|************|************|\n");
+    		printf("|*******|**************************************************************|*****************|************|***********************|\n");
+    		printf("|   ID  |                        TITULO                                |      AUTOR      |   PRECIO   |       EDITORIAL       |\n");
+    		printf("|*******|**************************************************************|*****************|************|***********************|\n");
         do
         {
         for(i = 0 ; i < ll_len(pArrayListBooks); i++)
@@ -66,13 +62,8 @@ int controller_ListBooks(LinkedList* pArrayListBooks)
         	eBook_getAutor(pAuxMovie, autor);
         	eBook_getPrecio(pAuxMovie, &precio);
         	eBook_getEditorial(pAuxMovie, editorial);
-        	for(j = 0; j < 7; j++)
-        	{
-        		pAuxEditorial = (eEditorial*)ll_get(pArrayListBooks, j);
-        		Aux = eBook_getEditorialId (pAuxEditorial,editorialId,editorial);
-        	}
 
-            printf("| %5d | %60s | %10s | %10.2f | %10d |\n", id,titulo,autor, precio,Aux);
+            printf("| %5d | %60s | %15s | %10.2f |  %20s |\n", id,titulo,autor, precio,editorial);
 
             if(i == pantalla)
              {
@@ -103,6 +94,51 @@ int controller_sort (LinkedList* pArrayListBooks)
 		 retorno = 0;
 	 }
 	 return retorno;
+}
+int controller_saveAsText(char* path , LinkedList* pArrayListMovies)
+{
+    FILE* file = NULL;
+    int retorno = -1;
+    int eBookQTY;
+    int i;
+    eBook* pAuxMovie;
+
+    if(pArrayListMovies != NULL)
+    {
+        eBookQTY = ll_len(pArrayListMovies);
+
+        file = fopen(path, "w");
+
+        if(file != NULL
+           && eBookQTY > 0 && eBookQTY <= 700
+           && fprintf(file, "id,titulo,autor,precio,editorialId\n") != -1)
+        {
+            for(i = 0; i < eBookQTY; i++)
+            {
+            	pAuxMovie = (eBook*)ll_get(pArrayListMovies, i);
+                if(fprintf(file, "%d,%s,%s,%.2f,%s\n",
+                		pAuxMovie->id,
+						pAuxMovie->titulo,
+						pAuxMovie->autor,
+						pAuxMovie->precio,
+						pAuxMovie->editorial) == -1)
+                {
+                    break;
+                }
+
+            }
+        }
+
+        if(i > 0 && i == eBookQTY)
+        {
+        	//printf("\nMONTOS %.2f",pAuxeBook->monto);
+        	retorno = 0;
+        }
+    }
+
+    fclose(file);
+    free(pAuxMovie);
+    return retorno;
 }
 /*
 int controller_getMontos (LinkedList* pArrayListMovies)
