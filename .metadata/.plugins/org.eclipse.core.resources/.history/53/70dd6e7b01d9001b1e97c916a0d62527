@@ -159,14 +159,10 @@ int eBook_compareByAutor(void* pThis1, void* pThis2)
     int comparar;
     eBook* pAuxBook1 = (eBook*)pThis1;
     eBook* pAuxBook2 = (eBook*)pThis2;
-    char autor1[MAX_NOMBRE];
-    char autor2[MAX_NOMBRE];
 
     if(pAuxBook1 != NULL && pAuxBook2 != NULL)
     {
-    	eBook_getAutor(pThis1, autor1);
-    	eBook_getAutor(pThis2, autor2);
-        comparar = strcmp(autor1, autor2);
+        comparar = strcmp(pAuxBook1->autor, pAuxBook2->autor);
     }
 
     return comparar;
@@ -174,12 +170,10 @@ int eBook_compareByAutor(void* pThis1, void* pThis2)
 int eBook_getEditorialId (eEditorial* arrayEditorial,int editorialId,char* detalleEditorial)
 {
 	int retorno = -1;
-
 	if(arrayEditorial != NULL && detalleEditorial != NULL)
 	{
 		if(arrayEditorial->editorial == editorialId)
 		{
-			//strcpy(arrayEditorial->editorialDetalle,detalleEditorial);
 			switch(editorialId)
 			{
 			case 1:
@@ -195,13 +189,12 @@ int eBook_getEditorialId (eEditorial* arrayEditorial,int editorialId,char* detal
 				strcpy(detalleEditorial,"Minotauro");
 				break;
 			case 5:
-				strcpy(detalleEditorial,"Salamandra");
+				strcpy(detalleEditorial,"SALAMANDRA");
 				break;
 			case 6:
-				strcpy(detalleEditorial,"Penguin books");
+				strcpy(detalleEditorial,"PENGUIN BOOKS");
 				break;
 			}
-
 			retorno = 0;
 		}
 	}
@@ -218,14 +211,14 @@ void calcularMonto(void* this)
 		eBook_getEditorial(this, &editorial);
 		eBook_getPrecio(this, &precio);
 
-		if(editorial == 1 && precio >= PRECIO_1)
+		if(editorial == 1 && precio >= 300)
 		{
-			precioDescuento = precio - (precio * DESCUENTO_1);
+			precioDescuento = precio - (precio * 0.20);
 			eBook_setPrecio(this, precioDescuento);
 		}
-		if(editorial == 2 && precio <= PRECIO_2)
+		if(editorial == 2 && precio <= 200)
 		{
-			precioDescuento = precio - (precio * DESCUENTO_2);
+			precioDescuento = precio - (precio * 0.10);
 			eBook_setPrecio(this, precioDescuento);
 
 		}

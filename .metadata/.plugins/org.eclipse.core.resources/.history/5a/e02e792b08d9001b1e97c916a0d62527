@@ -174,12 +174,11 @@ int eBook_compareByAutor(void* pThis1, void* pThis2)
 int eBook_getEditorialId (eEditorial* arrayEditorial,int editorialId,char* detalleEditorial)
 {
 	int retorno = -1;
-
 	if(arrayEditorial != NULL && detalleEditorial != NULL)
 	{
 		if(arrayEditorial->editorial == editorialId)
 		{
-			//strcpy(arrayEditorial->editorialDetalle,detalleEditorial);
+			arrayEditorial->editorialDetalle = detalleEditorial;
 			switch(editorialId)
 			{
 			case 1:
@@ -201,7 +200,6 @@ int eBook_getEditorialId (eEditorial* arrayEditorial,int editorialId,char* detal
 				strcpy(detalleEditorial,"Penguin books");
 				break;
 			}
-
 			retorno = 0;
 		}
 	}

@@ -65,7 +65,7 @@ int controller_ListBooks(LinkedList* pArrayListBooks)
         		eBook_getEditorialId (pAuxEditorial,editorialId,editorial);
         	}
 
-            printf("| %5d | %60s | %15s | %10.2f |  %20s || %5d |\n", id,titulo,autor, precio,editorial,editorialId);
+            printf("| %5d | %60s | %15s | %10.2f |  %20s || %5d |\n", id,titulo,autor, precio,pAuxEditorial->editorialDetalle,editorialId);
 
             if(i == pantalla)
              {

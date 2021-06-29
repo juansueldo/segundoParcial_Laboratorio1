@@ -16,8 +16,6 @@
 #define MAX_NOMBRE 70
 #define DESCUENTO_1 0.20
 #define DESCUENTO_2 0.10
-#define PRECIO_1 300
-#define PRECIO_2 200
 
 typedef struct{
 	int id;

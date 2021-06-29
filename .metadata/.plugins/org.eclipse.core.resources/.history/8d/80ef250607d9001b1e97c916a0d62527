@@ -59,7 +59,7 @@ int controller_ListBooks(LinkedList* pArrayListBooks)
         	eBook_getAutor(pAuxMovie, autor);
         	eBook_getPrecio(pAuxMovie, &precio);
         	eBook_getEditorial(pAuxMovie, &editorialId);
-        	for(j = 0; j < 7; j++)
+        	for(j = 0; j < 6; j++)
         	{
         		pAuxEditorial = (eEditorial*)ll_get(pArrayListBooks, j);
         		eBook_getEditorialId (pAuxEditorial,editorialId,editorial);

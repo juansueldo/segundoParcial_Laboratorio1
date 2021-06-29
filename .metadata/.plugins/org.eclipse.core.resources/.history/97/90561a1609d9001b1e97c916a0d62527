@@ -184,21 +184,27 @@ int eBook_getEditorialId (eEditorial* arrayEditorial,int editorialId,char* detal
 			{
 			case 1:
 				strcpy(detalleEditorial,"Planeta");
+				strcpy(arrayEditorial->editorialDetalle,detalleEditorial);
 				break;
 			case 2:
 				strcpy(detalleEditorial,"SIGLO XXI EDITORES");
+				strcpy(arrayEditorial->editorialDetalle,detalleEditorial);
 				break;
 			case 3:
 				strcpy(detalleEditorial,"Pearson");
+				strcpy(arrayEditorial->editorialDetalle,detalleEditorial);
 				break;
 			case 4:
 				strcpy(detalleEditorial,"Minotauro");
+				strcpy(arrayEditorial->editorialDetalle,detalleEditorial);
 				break;
 			case 5:
 				strcpy(detalleEditorial,"Salamandra");
+				strcpy(arrayEditorial->editorialDetalle,detalleEditorial);
 				break;
 			case 6:
 				strcpy(detalleEditorial,"Penguin books");
+				strcpy(arrayEditorial->editorialDetalle,detalleEditorial);
 				break;
 			}
 

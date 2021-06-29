@@ -413,3 +413,99 @@ gcc -o SegundoParcial.exe "src\\Controller.o" "src\\LinkedList.o" "src\\Menu.o" 
 Info: Nothing to build for SegundoParcial
 Info: Nothing to build for SegundoParcial
 Info: Nothing to build for SegundoParcial
+14:41:45 **** Incremental Build of configuration Debug for project SegundoParcial ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Parser.o" "..\\src\\Parser.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\book.o" "..\\src\\book.c" 
+gcc -o SegundoParcial.exe "src\\Controller.o" "src\\LinkedList.o" "src\\Menu.o" "src\\Parser.o" "src\\book.o" "src\\main.o" "src\\utn.o" 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file SegundoParcial.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+14:42:08 **** Incremental Build of configuration Debug for project SegundoParcial ****
+Info: Internal Builder is used for build
+gcc -o SegundoParcial.exe "src\\Controller.o" "src\\LinkedList.o" "src\\Menu.o" "src\\Parser.o" "src\\book.o" "src\\main.o" "src\\utn.o" 
+Info: Nothing to build for SegundoParcial
+14:43:16 **** Incremental Build of configuration Debug for project SegundoParcial ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\book.o" "..\\src\\book.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Parser.o" "..\\src\\Parser.c" 
+gcc -o SegundoParcial.exe "src\\Controller.o" "src\\LinkedList.o" "src\\Menu.o" "src\\Parser.o" "src\\book.o" "src\\main.o" "src\\utn.o" 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file SegundoParcial.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+14:43:19 **** Incremental Build of configuration Debug for project SegundoParcial ****
+Info: Internal Builder is used for build
+gcc -o SegundoParcial.exe "src\\Controller.o" "src\\LinkedList.o" "src\\Menu.o" "src\\Parser.o" "src\\book.o" "src\\main.o" "src\\utn.o" 
+Info: Nothing to build for SegundoParcial
+Info: Nothing to build for SegundoParcial
+Info: Nothing to build for SegundoParcial
+14:49:22 **** Incremental Build of configuration Debug for project SegundoParcial ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Parser.o" "..\\src\\Parser.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\book.o" "..\\src\\book.c" 
+gcc -o SegundoParcial.exe "src\\Controller.o" "src\\LinkedList.o" "src\\Menu.o" "src\\Parser.o" "src\\book.o" "src\\main.o" "src\\utn.o" 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file SegundoParcial.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+14:49:27 **** Incremental Build of configuration Debug for project SegundoParcial ****
+Info: Internal Builder is used for build
+gcc -o SegundoParcial.exe "src\\Controller.o" "src\\LinkedList.o" "src\\Menu.o" "src\\Parser.o" "src\\book.o" "src\\main.o" "src\\utn.o" 
+Info: Nothing to build for SegundoParcial
+Info: Nothing to build for SegundoParcial
+Info: Nothing to build for SegundoParcial
+Info: Nothing to build for SegundoParcial
+15:00:47 **** Incremental Build of configuration Debug for project SegundoParcial ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+gcc -o SegundoParcial.exe "src\\Controller.o" "src\\LinkedList.o" "src\\Menu.o" "src\\Parser.o" "src\\book.o" "src\\main.o" "src\\utn.o" 
+Info: Nothing to build for SegundoParcial
+Info: Nothing to build for SegundoParcial
+Info: Nothing to build for SegundoParcial
+15:22:56 **** Incremental Build of configuration Debug for project SegundoParcial ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+gcc -o SegundoParcial.exe "src\\Controller.o" "src\\LinkedList.o" "src\\Menu.o" "src\\Parser.o" "src\\book.o" "src\\main.o" "src\\utn.o" 
+Info: Nothing to build for SegundoParcial
+15:27:11 **** Incremental Build of configuration Debug for project SegundoParcial ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\book.o" "..\\src\\book.c" 
+gcc -o SegundoParcial.exe "src\\Controller.o" "src\\LinkedList.o" "src\\Menu.o" "src\\Parser.o" "src\\book.o" "src\\main.o" "src\\utn.o" 
+Info: Nothing to build for SegundoParcial
+15:30:48 **** Incremental Build of configuration Debug for project SegundoParcial ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\book.o" "..\\src\\book.c" 
+..\src\book.c: In function 'eBook_getEditorialId':
+..\src\book.c:181:37: error: assignment to expression with array type
+    arrayEditorial->editorialDetalle = detalleEditorial;
+                                     ^
+15:31:24 **** Incremental Build of configuration Debug for project SegundoParcial ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\book.o" "..\\src\\book.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+gcc -o SegundoParcial.exe "src\\Controller.o" "src\\LinkedList.o" "src\\Menu.o" "src\\Parser.o" "src\\book.o" "src\\main.o" "src\\utn.o" 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file SegundoParcial.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+15:31:28 **** Incremental Build of configuration Debug for project SegundoParcial ****
+Info: Internal Builder is used for build
+gcc -o SegundoParcial.exe "src\\Controller.o" "src\\LinkedList.o" "src\\Menu.o" "src\\Parser.o" "src\\book.o" "src\\main.o" "src\\utn.o" 
+Info: Nothing to build for SegundoParcial
+15:33:13 **** Incremental Build of configuration Debug for project SegundoParcial ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\book.o" "..\\src\\book.c" 
+gcc -o SegundoParcial.exe "src\\Controller.o" "src\\LinkedList.o" "src\\Menu.o" "src\\Parser.o" "src\\book.o" "src\\main.o" "src\\utn.o" 
+Info: Nothing to build for SegundoParcial
+15:34:53 **** Incremental Build of configuration Debug for project SegundoParcial ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\book.o" "..\\src\\book.c" 
+gcc -o SegundoParcial.exe "src\\Controller.o" "src\\LinkedList.o" "src\\Menu.o" "src\\Parser.o" "src\\book.o" "src\\main.o" "src\\utn.o" 
+Info: Nothing to build for SegundoParcial
+15:36:01 **** Incremental Build of configuration Debug for project SegundoParcial ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\book.o" "..\\src\\book.c" 
+gcc -o SegundoParcial.exe "src\\Controller.o" "src\\LinkedList.o" "src\\Menu.o" "src\\Parser.o" "src\\book.o" "src\\main.o" "src\\utn.o" 
+Info: Nothing to build for SegundoParcial
+15:37:41 **** Incremental Build of configuration Debug for project SegundoParcial ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\book.o" "..\\src\\book.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+gcc -o SegundoParcial.exe "src\\Controller.o" "src\\LinkedList.o" "src\\Menu.o" "src\\Parser.o" "src\\book.o" "src\\main.o" "src\\utn.o" 
+Info: Nothing to build for SegundoParcial
