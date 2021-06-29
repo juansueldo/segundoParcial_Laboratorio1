@@ -137,7 +137,7 @@ int utn_getNumero(int* pNum,char* mensaje,char* mensajeError,int minimo,int maxi
 	}
 	return rtn;
 }
-int esFloat (char pNum[])
+int esFloat (char* pNum)
 {
    int i=0;
    int rtn = -1;
@@ -268,4 +268,22 @@ int utn_getMayusMin (char name[], int tam)
 
 
    return 0;
+}
+int isValidNombre(char* cadena,int longitud)
+{
+	int i=0;
+	int retorno = 1;
+
+	if(cadena != NULL && longitud > 0)
+	{
+		for(i=0 ; cadena[i] != '\0' && i < longitud; i++)
+		{
+			if((cadena[i] < 'A' || cadena[i] > 'Z' ) && (cadena[i] < 'a' || cadena[i] > 'z' ))
+			{
+				retorno = 0;
+				break;
+			}
+		}
+	}
+	return retorno;
 }

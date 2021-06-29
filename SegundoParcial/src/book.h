@@ -19,12 +19,12 @@ typedef struct{
 	char titulo[MAX_NOMBRE];
 	char autor[MAX_NOMBRE];
 	float precio;
-	char editorial[MAX_NOMBRE];
+	int editorial;
 }eBook;
 
 typedef struct{
-	char editorial[MAX_NOMBRE];
-	int editorialId;
+	int editorial;
+	char editorialDetalle[MAX_NOMBRE];
 }eEditorial;
 
 eBook* eBook_new();
@@ -44,12 +44,12 @@ int eBook_getAutor(eBook* this,char* autor);
 int eBook_setPrecio(eBook* this,float precio);
 int eBook_getPrecio(eBook* this,float* precio);
 
-int eBook_setEditorial(eBook* this,char* editorial);
-int eBook_getEditorial(eBook* this,char* editorial);
+int eBook_setEditorial(eBook* this,int editorial);
+int eBook_getEditorial(eBook* this,int* editorial);
 
 int eBook_compareByAutor(void* pThis1, void* pThis2);
 
-int eBook_getEditorialId (eEditorial* arrayEditorial,int* editorialId,char* editorial);
+int eBook_getEditorialId (eEditorial* arrayEditorial,int editorialId,char* detalleEditorial);
 int eBook_setMonto(eBook* this,float monto);
 int eBook_getMonto(eBook* this,float* monto);
 int eBook_getMontoGenrado (eBook* this, int dia,int cantidad, float* monto);

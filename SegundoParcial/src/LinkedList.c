@@ -15,7 +15,7 @@ static int addNode(LinkedList* this, int nodeIndex,void* pElement);
  */
 LinkedList* ll_newLinkedList(void)
 {
-    LinkedList* this= NULL;
+    LinkedList* this = NULL;
     this = (LinkedList*)malloc(sizeof(LinkedList));
     if(this != NULL)
     {

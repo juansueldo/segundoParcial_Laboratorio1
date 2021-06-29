@@ -1,6 +1,6 @@
 #ifndef UTN_H_
 #define UTN_H_
-
+int utn_getTexto (char *pString);
 /* @brief Pide el numero al caracter y valida que este
  * @param auxiliarNum toma el dato ingresado por el usuario
  * @param i la cantidad de elementos que caben en auxiliarNum
@@ -9,7 +9,7 @@
  * @param mensajeError en caso de reintento vuelve a pedir el dao
  * @return retorna el valor del operador entero
  */
-//int utn_getChar(char* caracter,char* mensaje,char* errorMensaje,char min,char max,int intentos);
+int utn_getChar(char* caracter,char* mensaje,char* errorMensaje,char min,char max,int intentos);
 /*
  * @brief solicita un texto al usuario, en caso de error otorga reintentos
  * @param array Array donde se cargara el texto ingresado
@@ -48,7 +48,7 @@ int getInt ( int * pNum);
 * @param pNum Cadena de caracteres a ser analizada
 * @return Retorna cero si la cadena es numerica y continen puntos y -1  si no lo es
 */
-int esFloat (char pNum[]);
+int esFloat (char* pNum);
 /**
 * @brief Verifica si la cadena ingresada es numerica
 * @param pFloat Puntero al espacio de memoria donde se dejara el resultado de la funcion
@@ -113,5 +113,6 @@ int utn_getMayusMin (char name[], int tam);
  * @return Retorna cero cuando se convierte el caracter
  */
 int utn_getLower(char* letra);
+int isValidNombre(char* cadena,int longitud);
 
 #endif /* UTN_H_ */

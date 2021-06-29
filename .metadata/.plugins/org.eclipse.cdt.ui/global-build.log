@@ -1,417 +1,415 @@
-13:08:01 **** Incremental Build of configuration Debug for project SegundoParcial ****
+08:25:43 **** Incremental Build of configuration Debug for project SegundoParcial ****
 Info: Internal Builder is used for build
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\book.o" "..\\src\\book.c" 
 gcc -o SegundoParcial.exe "src\\Controller.o" "src\\LinkedList.o" "src\\Menu.o" "src\\Parser.o" "src\\book.o" "src\\main.o" "src\\utn.o" 
 Info: Nothing to build for SegundoParcial
-13:11:08 **** Incremental Build of configuration Debug for project SegundoParcial ****
+Info: Nothing to build for SegundoParcial
+08:33:34 **** Incremental Build of configuration Debug for project SegundoParcial ****
 Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\book.o" "..\\src\\book.c" 
+..\src\book.c: In function 'eBook_setTitulo':
+..\src\book.c:70:9: error: too few arguments to function 'isValidNombre'
+      if(isValidNombre(titulo))
+         ^~~~~~~~~~~~~
+..\src\book.c:2:12: note: declared here
+ static int isValidNombre(char* cadena,int longitud);
+            ^~~~~~~~~~~~~
+08:37:50 **** Incremental Build of configuration Debug for project SegundoParcial ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\book.o" "..\\src\\book.c" 
 gcc -o SegundoParcial.exe "src\\Controller.o" "src\\LinkedList.o" "src\\Menu.o" "src\\Parser.o" "src\\book.o" "src\\main.o" "src\\utn.o" 
 Info: Nothing to build for SegundoParcial
-13:37:21 **** Incremental Build of configuration Debug for project SegundoParcial ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\book.o" "..\\src\\book.c" 
-..\src\book.c:168:5: error: conflicting types for 'eBook_getEditorialId'
- int eBook_getEditorialId (eEditorial* arrayEditorial,int* editorialId,char* editorial)
-     ^~~~~~~~~~~~~~~~~~~~
-In file included from ..\src\book.c:1:0:
-..\src\book.h:52:5: note: previous declaration of 'eBook_getEditorialId' was here
- int eBook_getEditorialId (eEditorial* arrayEditorial,int editorialId,char* editorial);
-     ^~~~~~~~~~~~~~~~~~~~
-..\src\book.c: In function 'calcularMonto':
-..\src\book.c:217:28: warning: passing argument 2 of 'eBook_getEditorial' from incompatible pointer type [-Wincompatible-pointer-types]
-   eBook_getEditorial(this, &editorial);
-                            ^
-..\src\book.c:143:5: note: expected 'char *' but argument is of type 'int *'
- int eBook_getEditorial(eBook* this,char* editorial)
-     ^~~~~~~~~~~~~~~~~~
-..\src\book.c:219:25: warning: passing argument 1 of 'eBook_getEditorialId' makes pointer from integer without a cast [-Wint-conversion]
-   eBook_getEditorialId (auxIdEditorial,&auxIdEditorial,editorial);
-                         ^~~~~~~~~~~~~~
-..\src\book.c:168:5: note: expected 'eEditorial * {aka struct <anonymous> *}' but argument is of type 'int'
- int eBook_getEditorialId (eEditorial* arrayEditorial,int* editorialId,char* editorial)
-     ^~~~~~~~~~~~~~~~~~~~
-..\src\book.c:219:56: warning: passing argument 3 of 'eBook_getEditorialId' makes pointer from integer without a cast [-Wint-conversion]
-   eBook_getEditorialId (auxIdEditorial,&auxIdEditorial,editorial);
-                                                        ^~~~~~~~~
-..\src\book.c:168:5: note: expected 'char *' but argument is of type 'int'
- int eBook_getEditorialId (eEditorial* arrayEditorial,int* editorialId,char* editorial)
-     ^~~~~~~~~~~~~~~~~~~~
-..\src\book.c:211:14: warning: unused variable 'pAuxEditorial' [-Wunused-variable]
-  eEditorial* pAuxEditorial;
-              ^~~~~~~~~~~~~
-13:42:55 **** Incremental Build of configuration Debug for project SegundoParcial ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\book.o" "..\\src\\book.c" 
-..\src\book.c:168:5: error: conflicting types for 'eBook_getEditorialId'
- int eBook_getEditorialId (eEditorial* arrayEditorial,int* editorialId,char* editorial)
-     ^~~~~~~~~~~~~~~~~~~~
-In file included from ..\src\book.c:1:0:
-..\src\book.h:52:5: note: previous declaration of 'eBook_getEditorialId' was here
- int eBook_getEditorialId (eEditorial* arrayEditorial,int editorialId,char* editorial);
-     ^~~~~~~~~~~~~~~~~~~~
-..\src\book.c: In function 'calcularMonto':
-..\src\book.c:217:28: warning: passing argument 2 of 'eBook_getEditorial' makes pointer from integer without a cast [-Wint-conversion]
-   eBook_getEditorial(this, editorial);
-                            ^~~~~~~~~
-..\src\book.c:143:5: note: expected 'char *' but argument is of type 'int'
- int eBook_getEditorial(eBook* this,char* editorial)
-     ^~~~~~~~~~~~~~~~~~
-..\src\book.c:219:25: warning: passing argument 1 of 'eBook_getEditorialId' makes pointer from integer without a cast [-Wint-conversion]
-   eBook_getEditorialId (auxIdEditorial,&auxIdEditorial,editorial);
-                         ^~~~~~~~~~~~~~
-..\src\book.c:168:5: note: expected 'eEditorial * {aka struct <anonymous> *}' but argument is of type 'int'
- int eBook_getEditorialId (eEditorial* arrayEditorial,int* editorialId,char* editorial)
-     ^~~~~~~~~~~~~~~~~~~~
-..\src\book.c:219:56: warning: passing argument 3 of 'eBook_getEditorialId' makes pointer from integer without a cast [-Wint-conversion]
-   eBook_getEditorialId (auxIdEditorial,&auxIdEditorial,editorial);
-                                                        ^~~~~~~~~
-..\src\book.c:168:5: note: expected 'char *' but argument is of type 'int'
- int eBook_getEditorialId (eEditorial* arrayEditorial,int* editorialId,char* editorial)
-     ^~~~~~~~~~~~~~~~~~~~
-..\src\book.c:211:14: warning: unused variable 'pAuxEditorial' [-Wunused-variable]
-  eEditorial* pAuxEditorial;
-              ^~~~~~~~~~~~~
-13:43:27 **** Incremental Build of configuration Debug for project SegundoParcial ****
+Info: Nothing to build for SegundoParcial
+08:39:49 **** Incremental Build of configuration Debug for project SegundoParcial ****
 Info: Internal Builder is used for build
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Menu.o" "..\\src\\Menu.c" 
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Parser.o" "..\\src\\Parser.c" 
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.c" 
-..\src\main.c: In function 'main':
-..\src\main.c:71:17: warning: implicit declaration of function 'controller_saveAsText' [-Wimplicit-function-declaration]
-              if(controller_saveAsText("mapeado.csv",listaLibros)==0)
-                 ^~~~~~~~~~~~~~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Parser.o" "..\\src\\Parser.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utn.o" "..\\src\\utn.c" 
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\book.o" "..\\src\\book.c" 
+gcc -o SegundoParcial.exe "src\\Controller.o" "src\\LinkedList.o" "src\\Menu.o" "src\\Parser.o" "src\\book.o" "src\\main.o" "src\\utn.o" 
+Info: Nothing to build for SegundoParcial
+08:43:33 **** Incremental Build of configuration Debug for project SegundoParcial ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\book.o" "..\\src\\book.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utn.o" "..\\src\\utn.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Parser.o" "..\\src\\Parser.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Menu.o" "..\\src\\Menu.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+gcc -o SegundoParcial.exe "src\\Controller.o" "src\\LinkedList.o" "src\\Menu.o" "src\\Parser.o" "src\\book.o" "src\\main.o" "src\\utn.o" 
+Info: Nothing to build for SegundoParcial
+08:52:19 **** Incremental Build of configuration Debug for project SegundoParcial ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\book.o" "..\\src\\book.c" 
+gcc -o SegundoParcial.exe "src\\Controller.o" "src\\LinkedList.o" "src\\Menu.o" "src\\Parser.o" "src\\book.o" "src\\main.o" "src\\utn.o" 
+Info: Nothing to build for SegundoParcial
+08:53:23 **** Incremental Build of configuration Debug for project SegundoParcial ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\book.o" "..\\src\\book.c" 
+gcc -o SegundoParcial.exe "src\\Controller.o" "src\\LinkedList.o" "src\\Menu.o" "src\\Parser.o" "src\\book.o" "src\\main.o" "src\\utn.o" 
+Info: Nothing to build for SegundoParcial
+11:37:49 **** Incremental Build of configuration Debug for project SegundoParcial ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\LinkedList.o" "..\\src\\LinkedList.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Menu.o" "..\\src\\Menu.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\book.o" "..\\src\\book.c" 
+..\src\book.c: In function 'eBook_setEditorial':
+..\src\book.c:139:16: warning: passing argument 1 of 'strcpy' makes pointer from integer without a cast [-Wint-conversion]
+         strcpy(this->editorial, editorial);
+                ^~~~
+In file included from ..\src\book.h:12:0,
+                 from ..\src\book.c:1:
+c:\mingw\include\string.h:79:40: note: expected 'char *' but argument is of type 'int'
+ _CRTIMP __cdecl __MINGW_NOTHROW  char *strcpy (char *, const char *);
+                                        ^~~~~~
+..\src\book.c: In function 'eBook_getEditorial':
+..\src\book.c:151:27: warning: passing argument 2 of 'strcpy' makes pointer from integer without a cast [-Wint-conversion]
+         strcpy(editorial, this->editorial);
+                           ^~~~
+In file included from ..\src\book.h:12:0,
+                 from ..\src\book.c:1:
+c:\mingw\include\string.h:79:40: note: expected 'const char *' but argument is of type 'int'
+ _CRTIMP __cdecl __MINGW_NOTHROW  char *strcpy (char *, const char *);
+                                        ^~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+..\src\Controller.c: In function 'controller_saveAsText':
+..\src\Controller.c:113:50: warning: format '%s' expects argument of type 'char *', but argument 7 has type 'int' [-Wformat=]
+                 if(fprintf(file, "%d,%s,%s,%.2f,%s\n",
+                                                  ^
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Parser.o" "..\\src\\Parser.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.c" 
+gcc -o SegundoParcial.exe "src\\Controller.o" "src\\LinkedList.o" "src\\Menu.o" "src\\Parser.o" "src\\book.o" "src\\main.o" "src\\utn.o" 
+12:58:39 **** Incremental Build of configuration Debug for project SegundoParcial ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Parser.o" "..\\src\\Parser.c" 
+..\src\Parser.c: In function 'parser_BookFromText':
+..\src\Parser.c:31:22: error: assignment to expression with array type
+            buffer[4] = 1;
+                      ^
+..\src\Parser.c:35:22: error: assignment to expression with array type
+            buffer[4] = 2;
+                      ^
+..\src\Parser.c:39:19: error: assignment to expression with array type
+         buffer[4] =3;
+                   ^
+..\src\Parser.c:43:18: error: assignment to expression with array type
+         buffer[4]= 4;
+                  ^
+..\src\Parser.c:47:19: error: assignment to expression with array type
+         buffer[4] = 5;
+                   ^
+..\src\Parser.c:51:19: error: assignment to expression with array type
+         buffer[4] = 6;
+                   ^
+13:02:58 **** Incremental Build of configuration Debug for project SegundoParcial ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\book.o" "..\\src\\book.c" 
+..\src\book.c: In function 'eBook_newParametros':
+..\src\book.c:30:32: warning: passing argument 2 of 'eBook_setEditorial' makes pointer from integer without a cast [-Wint-conversion]
+      !eBook_setEditorial(this, atoi(editorial)))
+                                ^~~~
+In file included from ..\src\book.c:1:0:
+..\src\book.h:47:5: note: expected 'char *' but argument is of type 'int'
+ int eBook_setEditorial(eBook* this,char* editorial);
+     ^~~~~~~~~~~~~~~~~~
+..\src\book.c: At top level:
+..\src\book.c:133:5: error: conflicting types for 'eBook_setEditorial'
+ int eBook_setEditorial(eBook* this,int editorial)
+     ^~~~~~~~~~~~~~~~~~
+In file included from ..\src\book.c:1:0:
+..\src\book.h:47:5: note: previous declaration of 'eBook_setEditorial' was here
+ int eBook_setEditorial(eBook* this,char* editorial);
+     ^~~~~~~~~~~~~~~~~~
+..\src\book.c: In function 'eBook_setEditorial':
+..\src\book.c:137:34: warning: comparison between pointer and integer
+     if(this != NULL && editorial != NULL)
+                                  ^~
+..\src\book.c: At top level:
+..\src\book.c:145:5: error: conflicting types for 'eBook_getEditorial'
+ int eBook_getEditorial(eBook* this,int* editorial)
+     ^~~~~~~~~~~~~~~~~~
+In file included from ..\src\book.c:1:0:
+..\src\book.h:48:5: note: previous declaration of 'eBook_getEditorial' was here
+ int eBook_getEditorial(eBook* this,char* editorial);
+     ^~~~~~~~~~~~~~~~~~
+..\src\book.c: In function 'eBook_getEditorial':
+..\src\book.c:151:9: error: invalid type argument of unary '*' (have 'int')
+         *this->editorial = editorial;
+         ^~~~~~~~~~~~~~~~
 ..\src\book.c: In function 'calcularMonto':
-..\src\book.c:217:28: warning: passing argument 2 of 'eBook_getEditorial' makes pointer from integer without a cast [-Wint-conversion]
+..\src\book.c:215:28: warning: passing argument 2 of 'eBook_getEditorial' from incompatible pointer type [-Wincompatible-pointer-types]
    eBook_getEditorial(this, editorial);
                             ^~~~~~~~~
-..\src\book.c:143:5: note: expected 'char *' but argument is of type 'int'
- int eBook_getEditorial(eBook* this,char* editorial)
+..\src\book.c:145:5: note: expected 'int *' but argument is of type 'char *'
+ int eBook_getEditorial(eBook* this,int* editorial)
      ^~~~~~~~~~~~~~~~~~
-..\src\book.c:219:25: warning: passing argument 1 of 'eBook_getEditorialId' makes pointer from integer without a cast [-Wint-conversion]
-   eBook_getEditorialId (auxIdEditorial,&auxIdEditorial,editorial);
-                         ^~~~~~~~~~~~~~
-..\src\book.c:168:5: note: expected 'eEditorial * {aka struct <anonymous> *}' but argument is of type 'int'
- int eBook_getEditorialId (eEditorial* arrayEditorial,int* editorialId,char* editorial)
-     ^~~~~~~~~~~~~~~~~~~~
-..\src\book.c:219:56: warning: passing argument 3 of 'eBook_getEditorialId' makes pointer from integer without a cast [-Wint-conversion]
-   eBook_getEditorialId (auxIdEditorial,&auxIdEditorial,editorial);
-                                                        ^~~~~~~~~
-..\src\book.c:168:5: note: expected 'char *' but argument is of type 'int'
- int eBook_getEditorialId (eEditorial* arrayEditorial,int* editorialId,char* editorial)
-     ^~~~~~~~~~~~~~~~~~~~
-..\src\book.c:211:14: warning: unused variable 'pAuxEditorial' [-Wunused-variable]
-  eEditorial* pAuxEditorial;
-              ^~~~~~~~~~~~~
-..\src\book.c:217:3: warning: 'editorial' may be used uninitialized in this function [-Wmaybe-uninitialized]
+13:03:22 **** Incremental Build of configuration Debug for project SegundoParcial ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\book.o" "..\\src\\book.c" 
+..\src\book.c: In function 'eBook_newParametros':
+..\src\book.c:30:32: warning: passing argument 2 of 'eBook_setEditorial' makes pointer from integer without a cast [-Wint-conversion]
+      !eBook_setEditorial(this, atoi(editorial)))
+                                ^~~~
+In file included from ..\src\book.c:1:0:
+..\src\book.h:47:5: note: expected 'char *' but argument is of type 'int'
+ int eBook_setEditorial(eBook* this,char* editorial);
+     ^~~~~~~~~~~~~~~~~~
+..\src\book.c: At top level:
+..\src\book.c:133:5: error: conflicting types for 'eBook_setEditorial'
+ int eBook_setEditorial(eBook* this,int editorial)
+     ^~~~~~~~~~~~~~~~~~
+In file included from ..\src\book.c:1:0:
+..\src\book.h:47:5: note: previous declaration of 'eBook_setEditorial' was here
+ int eBook_setEditorial(eBook* this,char* editorial);
+     ^~~~~~~~~~~~~~~~~~
+..\src\book.c:145:5: error: conflicting types for 'eBook_getEditorial'
+ int eBook_getEditorial(eBook* this,int* editorial)
+     ^~~~~~~~~~~~~~~~~~
+In file included from ..\src\book.c:1:0:
+..\src\book.h:48:5: note: previous declaration of 'eBook_getEditorial' was here
+ int eBook_getEditorial(eBook* this,char* editorial);
+     ^~~~~~~~~~~~~~~~~~
+..\src\book.c: In function 'eBook_getEditorial':
+..\src\book.c:149:34: error: expected ')' before numeric constant
+     if(this != NULL && editorial 0)
+                                  ^
+..\src\book.c:151:9: error: invalid type argument of unary '*' (have 'int')
+         *this->editorial = editorial;
+         ^~~~~~~~~~~~~~~~
+..\src\book.c: In function 'calcularMonto':
+..\src\book.c:215:28: warning: passing argument 2 of 'eBook_getEditorial' from incompatible pointer type [-Wincompatible-pointer-types]
    eBook_getEditorial(this, editorial);
-   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                            ^~~~~~~~~
+..\src\book.c:145:5: note: expected 'int *' but argument is of type 'char *'
+ int eBook_getEditorial(eBook* this,int* editorial)
+     ^~~~~~~~~~~~~~~~~~
+13:03:33 **** Incremental Build of configuration Debug for project SegundoParcial ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Parser.o" "..\\src\\Parser.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\book.o" "..\\src\\book.c" 
+..\src\book.c: In function 'eBook_newParametros':
+..\src\book.c:30:32: warning: passing argument 2 of 'eBook_setEditorial' makes pointer from integer without a cast [-Wint-conversion]
+      !eBook_setEditorial(this, atoi(editorial)))
+                                ^~~~
+In file included from ..\src\book.c:1:0:
+..\src\book.h:47:5: note: expected 'char *' but argument is of type 'int'
+ int eBook_setEditorial(eBook* this,char* editorial);
+     ^~~~~~~~~~~~~~~~~~
+..\src\book.c: At top level:
+..\src\book.c:133:5: error: conflicting types for 'eBook_setEditorial'
+ int eBook_setEditorial(eBook* this,int editorial)
+     ^~~~~~~~~~~~~~~~~~
+In file included from ..\src\book.c:1:0:
+..\src\book.h:47:5: note: previous declaration of 'eBook_setEditorial' was here
+ int eBook_setEditorial(eBook* this,char* editorial);
+     ^~~~~~~~~~~~~~~~~~
+..\src\book.c:145:5: error: conflicting types for 'eBook_getEditorial'
+ int eBook_getEditorial(eBook* this,int* editorial)
+     ^~~~~~~~~~~~~~~~~~
+In file included from ..\src\book.c:1:0:
+..\src\book.h:48:5: note: previous declaration of 'eBook_getEditorial' was here
+ int eBook_getEditorial(eBook* this,char* editorial);
+     ^~~~~~~~~~~~~~~~~~
+..\src\book.c: In function 'eBook_getEditorial':
+..\src\book.c:151:9: error: invalid type argument of unary '*' (have 'int')
+         *this->editorial = editorial;
+         ^~~~~~~~~~~~~~~~
+..\src\book.c: In function 'calcularMonto':
+..\src\book.c:215:28: warning: passing argument 2 of 'eBook_getEditorial' from incompatible pointer type [-Wincompatible-pointer-types]
+   eBook_getEditorial(this, editorial);
+                            ^~~~~~~~~
+..\src\book.c:145:5: note: expected 'int *' but argument is of type 'char *'
+ int eBook_getEditorial(eBook* this,int* editorial)
+     ^~~~~~~~~~~~~~~~~~
+13:04:05 **** Incremental Build of configuration Debug for project SegundoParcial ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Parser.o" "..\\src\\Parser.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+..\src\Controller.c: In function 'controller_ListBooks':
+..\src\Controller.c:58:40: warning: passing argument 2 of 'eBook_getEditorial' from incompatible pointer type [-Wincompatible-pointer-types]
+          eBook_getEditorial(pAuxBooks, editorial);
+                                        ^~~~~~~~~
+In file included from ..\src\Parser.h:11:0,
+                 from ..\src\Controller.h:11,
+                 from ..\src\Controller.c:1:
+..\src\book.h:48:5: note: expected 'int *' but argument is of type 'char *'
+ int eBook_getEditorial(eBook* this,int* editorial);
+     ^~~~~~~~~~~~~~~~~~
+..\src\Controller.c: In function 'controller_saveAsText':
+..\src\Controller.c:113:50: warning: format '%s' expects argument of type 'char *', but argument 7 has type 'int' [-Wformat=]
+                 if(fprintf(file, "%d,%s,%s,%.2f,%s\n",
+                                                  ^
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\book.o" "..\\src\\book.c" 
+..\src\book.c: In function 'eBook_getEditorial':
+..\src\book.c:151:9: error: invalid type argument of unary '*' (have 'int')
+         *this->editorial = editorial;
+         ^~~~~~~~~~~~~~~~
+..\src\book.c: In function 'calcularMonto':
+..\src\book.c:215:28: warning: passing argument 2 of 'eBook_getEditorial' from incompatible pointer type [-Wincompatible-pointer-types]
+   eBook_getEditorial(this, editorial);
+                            ^~~~~~~~~
+..\src\book.c:145:5: note: expected 'int *' but argument is of type 'char *'
+ int eBook_getEditorial(eBook* this,int* editorial)
+     ^~~~~~~~~~~~~~~~~~
+13:05:43 **** Incremental Build of configuration Debug for project SegundoParcial ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\book.o" "..\\src\\book.c" 
+..\src\book.c: In function 'eBook_getEditorial':
+..\src\book.c:151:9: error: invalid type argument of unary '*' (have 'int')
+         *this->editorial = editorial;
+         ^~~~~~~~~~~~~~~~
+..\src\book.c: In function 'calcularMonto':
+..\src\book.c:215:28: warning: passing argument 2 of 'eBook_getEditorial' from incompatible pointer type [-Wincompatible-pointer-types]
+   eBook_getEditorial(this, editorial);
+                            ^~~~~~~~~
+..\src\book.c:145:5: note: expected 'int *' but argument is of type 'char *'
+ int eBook_getEditorial(eBook* this,int* editorial)
+     ^~~~~~~~~~~~~~~~~~
+13:06:38 **** Incremental Build of configuration Debug for project SegundoParcial ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\book.o" "..\\src\\book.c" 
+..\src\book.c: In function 'calcularMonto':
+..\src\book.c:215:28: warning: passing argument 2 of 'eBook_getEditorial' from incompatible pointer type [-Wincompatible-pointer-types]
+   eBook_getEditorial(this, editorial);
+                            ^~~~~~~~~
+..\src\book.c:145:5: note: expected 'int *' but argument is of type 'char *'
+ int eBook_getEditorial(eBook* this,int* editorial)
+     ^~~~~~~~~~~~~~~~~~
 gcc -o SegundoParcial.exe "src\\Controller.o" "src\\LinkedList.o" "src\\Menu.o" "src\\Parser.o" "src\\book.o" "src\\main.o" "src\\utn.o" 
-src\main.o: In function `main':
-C:\Users\operador\Desktop\Juan Presupuestos\segundoParcial_Laboratorio1\SegundoParcial\Debug/../src/main.c:71: undefined reference to `controller_saveAsText'
-collect2.exe: error: ld returned 1 exit status
-13:45:37 **** Incremental Build of configuration Debug for project SegundoParcial ****
+13:15:12 **** Incremental Build of configuration Debug for project SegundoParcial ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+..\src\Controller.c: In function 'controller_ListBooks':
+..\src\Controller.c:65:47: warning: passing argument 2 of 'eBook_getEditorialId' makes pointer from integer without a cast [-Wint-conversion]
+           eBook_getEditorialId (pAuxEditorial,editorialId,editorial);
+                                               ^~~~~~~~~~~
+In file included from ..\src\Parser.h:11:0,
+                 from ..\src\Controller.h:11,
+                 from ..\src\Controller.c:1:
+..\src\book.h:52:5: note: expected 'int *' but argument is of type 'int'
+ int eBook_getEditorialId (eEditorial* arrayEditorial,int* editorialId,char* editorial);
+     ^~~~~~~~~~~~~~~~~~~~
+..\src\Controller.c: In function 'controller_saveAsText':
+..\src\Controller.c:121:50: warning: format '%s' expects argument of type 'char *', but argument 7 has type 'int' [-Wformat=]
+                 if(fprintf(file, "%d,%s,%s,%.2f,%s\n",
+                                                  ^
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\book.o" "..\\src\\book.c" 
+..\src\book.c:170:5: error: conflicting types for 'eBook_getEditorialId'
+ int eBook_getEditorialId (eEditorial* arrayEditorial,int editorialId,char* detalleEditorial)
+     ^~~~~~~~~~~~~~~~~~~~
+In file included from ..\src\book.c:1:0:
+..\src\book.h:52:5: note: previous declaration of 'eBook_getEditorialId' was here
+ int eBook_getEditorialId (eEditorial* arrayEditorial,int* editorialId,char* editorial);
+     ^~~~~~~~~~~~~~~~~~~~
+..\src\book.c: In function 'eBook_getEditorialId':
+..\src\book.c:175:32: warning: comparison between pointer and integer
+   if(arrayEditorial->editorial == editorialId)
+                                ^~
+13:50:26 **** Incremental Build of configuration Debug for project SegundoParcial ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\book.o" "..\\src\\book.c" 
+..\src\book.c:170:5: error: conflicting types for 'eBook_getEditorialId'
+ int eBook_getEditorialId (eEditorial* arrayEditorial,int editorialId,char* detalleEditorial)
+     ^~~~~~~~~~~~~~~~~~~~
+In file included from ..\src\book.c:1:0:
+..\src\book.h:52:5: note: previous declaration of 'eBook_getEditorialId' was here
+ int eBook_getEditorialId (eEditorial* arrayEditorial,int* editorialId,char* editorial);
+     ^~~~~~~~~~~~~~~~~~~~
+..\src\book.c: In function 'eBook_getEditorialId':
+..\src\book.c:175:32: warning: comparison between pointer and integer
+   if(arrayEditorial->editorial == editorialId)
+                                ^~
+14:07:23 **** Incremental Build of configuration Debug for project SegundoParcial ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+..\src\Controller.c: In function 'controller_ListBooks':
+..\src\Controller.c:65:47: warning: passing argument 2 of 'eBook_getEditorialId' makes pointer from integer without a cast [-Wint-conversion]
+           eBook_getEditorialId (pAuxEditorial,editorialId,editorial);
+                                               ^~~~~~~~~~~
+In file included from ..\src\Parser.h:11:0,
+                 from ..\src\Controller.h:11,
+                 from ..\src\Controller.c:1:
+..\src\book.h:52:5: note: expected 'int *' but argument is of type 'int'
+ int eBook_getEditorialId (eEditorial* arrayEditorial,int* editorialId,char* editorial);
+     ^~~~~~~~~~~~~~~~~~~~
+..\src\Controller.c: In function 'controller_saveAsText':
+..\src\Controller.c:121:50: warning: format '%s' expects argument of type 'char *', but argument 7 has type 'int' [-Wformat=]
+                 if(fprintf(file, "%d,%s,%s,%.2f,%s\n",
+                                                  ^
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Parser.o" "..\\src\\Parser.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\book.o" "..\\src\\book.c" 
+..\src\book.c:170:5: error: conflicting types for 'eBook_getEditorialId'
+ int eBook_getEditorialId (eEditorial* arrayEditorial,int editorialId,char* detalleEditorial)
+     ^~~~~~~~~~~~~~~~~~~~
+In file included from ..\src\book.c:1:0:
+..\src\book.h:52:5: note: previous declaration of 'eBook_getEditorialId' was here
+ int eBook_getEditorialId (eEditorial* arrayEditorial,int* editorialId,char* editorial);
+     ^~~~~~~~~~~~~~~~~~~~
+..\src\book.c: In function 'eBook_getEditorialId':
+..\src\book.c:175:20: error: 'eEditorial {aka struct <anonymous>}' has no member named 'editorialId'; did you mean 'editorial'?
+   if(arrayEditorial->editorialId == editorialId)
+                    ^~
+14:14:19 **** Incremental Build of configuration Debug for project SegundoParcial ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+..\src\Controller.c: In function 'controller_saveAsText':
+..\src\Controller.c:121:50: warning: format '%s' expects argument of type 'char *', but argument 7 has type 'int' [-Wformat=]
+                 if(fprintf(file, "%d,%s,%s,%.2f,%s\n",
+                                                  ^
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Parser.o" "..\\src\\Parser.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\book.o" "..\\src\\book.c" 
+..\src\book.c: In function 'eBook_getEditorialId':
+..\src\book.c:175:20: error: 'eEditorial {aka struct <anonymous>}' has no member named 'editorialId'; did you mean 'editorial'?
+   if(arrayEditorial->editorialId == editorialId)
+                    ^~
+14:14:37 **** Incremental Build of configuration Debug for project SegundoParcial ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\book.o" "..\\src\\book.c" 
+..\src\book.c: In function 'eBook_getEditorialId':
+..\src\book.c:175:20: error: 'eEditorial {aka struct <anonymous>}' has no member named 'editorialId'; did you mean 'editorial'?
+   if(arrayEditorial->editorialId == editorialId)
+                    ^~
+14:15:22 **** Incremental Build of configuration Debug for project SegundoParcial ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\book.o" "..\\src\\book.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+..\src\Controller.c: In function 'controller_saveAsText':
+..\src\Controller.c:121:50: warning: format '%s' expects argument of type 'char *', but argument 7 has type 'int' [-Wformat=]
+                 if(fprintf(file, "%d,%s,%s,%.2f,%s\n",
+                                                  ^
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Parser.o" "..\\src\\Parser.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.c" 
+gcc -o SegundoParcial.exe "src\\Controller.o" "src\\LinkedList.o" "src\\Menu.o" "src\\Parser.o" "src\\book.o" "src\\main.o" "src\\utn.o" 
+14:15:39 **** Incremental Build of configuration Debug for project SegundoParcial ****
 Info: Internal Builder is used for build
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
 gcc -o SegundoParcial.exe "src\\Controller.o" "src\\LinkedList.o" "src\\Menu.o" "src\\Parser.o" "src\\book.o" "src\\main.o" "src\\utn.o" 
 Info: Nothing to build for SegundoParcial
-13:52:35 **** Incremental Build of configuration Debug for project SegundoParcial ****
+14:23:22 **** Incremental Build of configuration Debug for project SegundoParcial ****
 Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\book.o" "..\\src\\book.c" 
-..\src\book.c: In function 'calcularMonto':
-..\src\book.c:218:28: warning: passing argument 1 of 'll_get' makes pointer from integer without a cast [-Wint-conversion]
-    auxIdEditorial = ll_get(auxIdEditorial, i);
-                            ^~~~~~~~~~~~~~
-In file included from ..\src\book.h:13:0,
-                 from ..\src\book.c:1:
-..\src\LinkedList.h:42:7: note: expected 'LinkedList * {aka struct LinkedList *}' but argument is of type 'int'
- void* ll_get(LinkedList* this, int index);
-       ^~~~~~
-..\src\book.c:218:19: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
-    auxIdEditorial = ll_get(auxIdEditorial, i);
-                   ^
-..\src\book.c:222:28: warning: passing argument 2 of 'eBook_getEditorial' makes pointer from integer without a cast [-Wint-conversion]
-   eBook_getEditorial(this, editorial);
-                            ^~~~~~~~~
-..\src\book.c:143:5: note: expected 'char *' but argument is of type 'int'
- int eBook_getEditorial(eBook* this,char* editorial)
-     ^~~~~~~~~~~~~~~~~~
-..\src\book.c:224:25: warning: passing argument 1 of 'eBook_getEditorialId' makes pointer from integer without a cast [-Wint-conversion]
-   eBook_getEditorialId (auxIdEditorial,&auxIdEditorial,editorial);
-                         ^~~~~~~~~~~~~~
-..\src\book.c:168:5: note: expected 'eEditorial * {aka struct <anonymous> *}' but argument is of type 'int'
- int eBook_getEditorialId (eEditorial* arrayEditorial,int* editorialId,char* editorial)
-     ^~~~~~~~~~~~~~~~~~~~
-..\src\book.c:224:56: warning: passing argument 3 of 'eBook_getEditorialId' makes pointer from integer without a cast [-Wint-conversion]
-   eBook_getEditorialId (auxIdEditorial,&auxIdEditorial,editorial);
-                                                        ^~~~~~~~~
-..\src\book.c:168:5: note: expected 'char *' but argument is of type 'int'
- int eBook_getEditorialId (eEditorial* arrayEditorial,int* editorialId,char* editorial)
-     ^~~~~~~~~~~~~~~~~~~~
-..\src\book.c:211:14: warning: unused variable 'pAuxEditorial' [-Wunused-variable]
-  eEditorial* pAuxEditorial;
-              ^~~~~~~~~~~~~
-..\src\book.c:222:3: warning: 'editorial' may be used uninitialized in this function [-Wmaybe-uninitialized]
-   eBook_getEditorial(this, editorial);
-   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-gcc -o SegundoParcial.exe "src\\Controller.o" "src\\LinkedList.o" "src\\Menu.o" "src\\Parser.o" "src\\book.o" "src\\main.o" "src\\utn.o" 
-13:52:53 **** Incremental Build of configuration Debug for project SegundoParcial ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\book.o" "..\\src\\book.c" 
-..\src\book.c: In function 'calcularMonto':
-..\src\book.c:218:28: warning: passing argument 1 of 'll_get' makes pointer from integer without a cast [-Wint-conversion]
-    auxIdEditorial = ll_get(auxIdEditorial, i);
-                            ^~~~~~~~~~~~~~
-In file included from ..\src\book.h:13:0,
-                 from ..\src\book.c:1:
-..\src\LinkedList.h:42:7: note: expected 'LinkedList * {aka struct LinkedList *}' but argument is of type 'int'
- void* ll_get(LinkedList* this, int index);
-       ^~~~~~
-..\src\book.c:218:19: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
-    auxIdEditorial = ll_get(auxIdEditorial, i);
-                   ^
-..\src\book.c:222:28: warning: passing argument 2 of 'eBook_getEditorial' makes pointer from integer without a cast [-Wint-conversion]
-   eBook_getEditorial(this, editorial);
-                            ^~~~~~~~~
-..\src\book.c:143:5: note: expected 'char *' but argument is of type 'int'
- int eBook_getEditorial(eBook* this,char* editorial)
-     ^~~~~~~~~~~~~~~~~~
-..\src\book.c:224:25: warning: passing argument 1 of 'eBook_getEditorialId' makes pointer from integer without a cast [-Wint-conversion]
-   eBook_getEditorialId (auxIdEditorial,&auxIdEditorial,editorial);
-                         ^~~~~~~~~~~~~~
-..\src\book.c:168:5: note: expected 'eEditorial * {aka struct <anonymous> *}' but argument is of type 'int'
- int eBook_getEditorialId (eEditorial* arrayEditorial,int* editorialId,char* editorial)
-     ^~~~~~~~~~~~~~~~~~~~
-..\src\book.c:224:56: warning: passing argument 3 of 'eBook_getEditorialId' makes pointer from integer without a cast [-Wint-conversion]
-   eBook_getEditorialId (auxIdEditorial,&auxIdEditorial,editorial);
-                                                        ^~~~~~~~~
-..\src\book.c:168:5: note: expected 'char *' but argument is of type 'int'
- int eBook_getEditorialId (eEditorial* arrayEditorial,int* editorialId,char* editorial)
-     ^~~~~~~~~~~~~~~~~~~~
-..\src\book.c:211:14: warning: unused variable 'pAuxEditorial' [-Wunused-variable]
-  eEditorial* pAuxEditorial = NULL;
-              ^~~~~~~~~~~~~
-..\src\book.c:222:3: warning: 'editorial' may be used uninitialized in this function [-Wmaybe-uninitialized]
-   eBook_getEditorial(this, editorial);
-   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-gcc -o SegundoParcial.exe "src\\Controller.o" "src\\LinkedList.o" "src\\Menu.o" "src\\Parser.o" "src\\book.o" "src\\main.o" "src\\utn.o" 
-13:53:35 **** Incremental Build of configuration Debug for project SegundoParcial ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\book.o" "..\\src\\book.c" 
-..\src\book.c: In function 'calcularMonto':
-..\src\book.c:218:41: warning: passing argument 1 of 'll_get' makes pointer from integer without a cast [-Wint-conversion]
-    auxIdEditorial = (eEditorial*)ll_get(auxIdEditorial, i);
-                                         ^~~~~~~~~~~~~~
-In file included from ..\src\book.h:13:0,
-                 from ..\src\book.c:1:
-..\src\LinkedList.h:42:7: note: expected 'LinkedList * {aka struct LinkedList *}' but argument is of type 'int'
- void* ll_get(LinkedList* this, int index);
-       ^~~~~~
-..\src\book.c:218:19: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
-    auxIdEditorial = (eEditorial*)ll_get(auxIdEditorial, i);
-                   ^
-..\src\book.c:222:28: warning: passing argument 2 of 'eBook_getEditorial' makes pointer from integer without a cast [-Wint-conversion]
-   eBook_getEditorial(this, editorial);
-                            ^~~~~~~~~
-..\src\book.c:143:5: note: expected 'char *' but argument is of type 'int'
- int eBook_getEditorial(eBook* this,char* editorial)
-     ^~~~~~~~~~~~~~~~~~
-..\src\book.c:224:25: warning: passing argument 1 of 'eBook_getEditorialId' makes pointer from integer without a cast [-Wint-conversion]
-   eBook_getEditorialId (auxIdEditorial,&auxIdEditorial,editorial);
-                         ^~~~~~~~~~~~~~
-..\src\book.c:168:5: note: expected 'eEditorial * {aka struct <anonymous> *}' but argument is of type 'int'
- int eBook_getEditorialId (eEditorial* arrayEditorial,int* editorialId,char* editorial)
-     ^~~~~~~~~~~~~~~~~~~~
-..\src\book.c:224:56: warning: passing argument 3 of 'eBook_getEditorialId' makes pointer from integer without a cast [-Wint-conversion]
-   eBook_getEditorialId (auxIdEditorial,&auxIdEditorial,editorial);
-                                                        ^~~~~~~~~
-..\src\book.c:168:5: note: expected 'char *' but argument is of type 'int'
- int eBook_getEditorialId (eEditorial* arrayEditorial,int* editorialId,char* editorial)
-     ^~~~~~~~~~~~~~~~~~~~
-..\src\book.c:211:14: warning: unused variable 'pAuxEditorial' [-Wunused-variable]
-  eEditorial* pAuxEditorial = NULL;
-              ^~~~~~~~~~~~~
-..\src\book.c:222:3: warning: 'editorial' may be used uninitialized in this function [-Wmaybe-uninitialized]
-   eBook_getEditorial(this, editorial);
-   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-gcc -o SegundoParcial.exe "src\\Controller.o" "src\\LinkedList.o" "src\\Menu.o" "src\\Parser.o" "src\\book.o" "src\\main.o" "src\\utn.o" 
-13:55:19 **** Incremental Build of configuration Debug for project SegundoParcial ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\book.o" "..\\src\\book.c" 
-..\src\book.c: In function 'calcularMonto':
-..\src\book.c:218:28: warning: passing argument 2 of 'eBook_getEditorial' makes pointer from integer without a cast [-Wint-conversion]
-   eBook_getEditorial(this, editorial);
-                            ^~~~~~~~~
-..\src\book.c:143:5: note: expected 'char *' but argument is of type 'int'
- int eBook_getEditorial(eBook* this,char* editorial)
-     ^~~~~~~~~~~~~~~~~~
-..\src\book.c:220:25: warning: passing argument 1 of 'eBook_getEditorialId' makes pointer from integer without a cast [-Wint-conversion]
-   eBook_getEditorialId (auxIdEditorial,&auxIdEditorial,editorial);
-                         ^~~~~~~~~~~~~~
-..\src\book.c:168:5: note: expected 'eEditorial * {aka struct <anonymous> *}' but argument is of type 'int'
- int eBook_getEditorialId (eEditorial* arrayEditorial,int* editorialId,char* editorial)
-     ^~~~~~~~~~~~~~~~~~~~
-..\src\book.c:220:56: warning: passing argument 3 of 'eBook_getEditorialId' makes pointer from integer without a cast [-Wint-conversion]
-   eBook_getEditorialId (auxIdEditorial,&auxIdEditorial,editorial);
-                                                        ^~~~~~~~~
-..\src\book.c:168:5: note: expected 'char *' but argument is of type 'int'
- int eBook_getEditorialId (eEditorial* arrayEditorial,int* editorialId,char* editorial)
-     ^~~~~~~~~~~~~~~~~~~~
-..\src\book.c:213:6: warning: unused variable 'i' [-Wunused-variable]
-  int i;
-      ^
-..\src\book.c:211:14: warning: unused variable 'pAuxEditorial' [-Wunused-variable]
-  eEditorial* pAuxEditorial;
-              ^~~~~~~~~~~~~
-..\src\book.c:218:3: warning: 'editorial' may be used uninitialized in this function [-Wmaybe-uninitialized]
-   eBook_getEditorial(this, editorial);
-   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-gcc -o SegundoParcial.exe "src\\Controller.o" "src\\LinkedList.o" "src\\Menu.o" "src\\Parser.o" "src\\book.o" "src\\main.o" "src\\utn.o" 
-13:56:06 **** Incremental Build of configuration Debug for project SegundoParcial ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\book.o" "..\\src\\book.c" 
-..\src\book.c: In function 'calcularMonto':
-..\src\book.c:219:25: warning: passing argument 1 of 'eBook_getEditorialId' makes pointer from integer without a cast [-Wint-conversion]
-   eBook_getEditorialId (auxIdEditorial,&auxIdEditorial,editorial);
-                         ^~~~~~~~~~~~~~
-..\src\book.c:168:5: note: expected 'eEditorial * {aka struct <anonymous> *}' but argument is of type 'int'
- int eBook_getEditorialId (eEditorial* arrayEditorial,int* editorialId,char* editorial)
-     ^~~~~~~~~~~~~~~~~~~~
-..\src\book.c:211:14: warning: unused variable 'pAuxEditorial' [-Wunused-variable]
-  eEditorial* pAuxEditorial;
-              ^~~~~~~~~~~~~
-gcc -o SegundoParcial.exe "src\\Controller.o" "src\\LinkedList.o" "src\\Menu.o" "src\\Parser.o" "src\\book.o" "src\\main.o" "src\\utn.o" 
-Info: Nothing to build for SegundoParcial
-Info: Nothing to build for SegundoParcial
-Info: Nothing to build for SegundoParcial
-13:58:27 **** Incremental Build of configuration Debug for project SegundoParcial ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\book.o" "..\\src\\book.c" 
-..\src\book.c: In function 'calcularMonto':
-..\src\book.c:219:25: warning: passing argument 1 of 'eBook_getEditorialId' makes pointer from integer without a cast [-Wint-conversion]
-   eBook_getEditorialId (auxIdEditorial,&auxIdEditorial,editorial);
-                         ^~~~~~~~~~~~~~
-..\src\book.c:168:5: note: expected 'eEditorial * {aka struct <anonymous> *}' but argument is of type 'int'
- int eBook_getEditorialId (eEditorial* arrayEditorial,int* editorialId,char* editorial)
-     ^~~~~~~~~~~~~~~~~~~~
-..\src\book.c:211:14: warning: unused variable 'pAuxEditorial' [-Wunused-variable]
-  eEditorial* pAuxEditorial = NULL;
-              ^~~~~~~~~~~~~
-gcc -o SegundoParcial.exe "src\\Controller.o" "src\\LinkedList.o" "src\\Menu.o" "src\\Parser.o" "src\\book.o" "src\\main.o" "src\\utn.o" 
-13:58:54 **** Incremental Build of configuration Debug for project SegundoParcial ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\book.o" "..\\src\\book.c" 
-..\src\book.c: In function 'calcularMonto':
-..\src\book.c:219:25: warning: passing argument 1 of 'eBook_getEditorialId' makes pointer from integer without a cast [-Wint-conversion]
-   eBook_getEditorialId (auxIdEditorial,auxIdEditorial,editorial);
-                         ^~~~~~~~~~~~~~
-..\src\book.c:168:5: note: expected 'eEditorial * {aka struct <anonymous> *}' but argument is of type 'int'
- int eBook_getEditorialId (eEditorial* arrayEditorial,int* editorialId,char* editorial)
-     ^~~~~~~~~~~~~~~~~~~~
-..\src\book.c:219:40: warning: passing argument 2 of 'eBook_getEditorialId' makes pointer from integer without a cast [-Wint-conversion]
-   eBook_getEditorialId (auxIdEditorial,auxIdEditorial,editorial);
-                                        ^~~~~~~~~~~~~~
-..\src\book.c:168:5: note: expected 'int *' but argument is of type 'int'
- int eBook_getEditorialId (eEditorial* arrayEditorial,int* editorialId,char* editorial)
-     ^~~~~~~~~~~~~~~~~~~~
-..\src\book.c:211:14: warning: unused variable 'pAuxEditorial' [-Wunused-variable]
-  eEditorial* pAuxEditorial = NULL;
-              ^~~~~~~~~~~~~
-..\src\book.c:219:3: warning: 'auxIdEditorial' may be used uninitialized in this function [-Wmaybe-uninitialized]
-   eBook_getEditorialId (auxIdEditorial,auxIdEditorial,editorial);
-   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-gcc -o SegundoParcial.exe "src\\Controller.o" "src\\LinkedList.o" "src\\Menu.o" "src\\Parser.o" "src\\book.o" "src\\main.o" "src\\utn.o" 
-14:00:41 **** Incremental Build of configuration Debug for project SegundoParcial ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\book.o" "..\\src\\book.c" 
-..\src\book.c:206:6: error: conflicting types for 'calcularMonto'
- void calcularMonto(void* this, void* this2)
-      ^~~~~~~~~~~~~
-In file included from ..\src\book.c:1:0:
-..\src\book.h:57:6: note: previous declaration of 'calcularMonto' was here
- void calcularMonto(void* this);
-      ^~~~~~~~~~~~~
-..\src\book.c: In function 'calcularMonto':
-..\src\book.c:219:25: warning: passing argument 1 of 'eBook_getEditorialId' makes pointer from integer without a cast [-Wint-conversion]
-   eBook_getEditorialId (auxIdEditorial,&auxIdEditorial,editorial);
-                         ^~~~~~~~~~~~~~
-..\src\book.c:168:5: note: expected 'eEditorial * {aka struct <anonymous> *}' but argument is of type 'int'
- int eBook_getEditorialId (eEditorial* arrayEditorial,int* editorialId,char* editorial)
-     ^~~~~~~~~~~~~~~~~~~~
-..\src\book.c:211:14: warning: unused variable 'pAuxEditorial' [-Wunused-variable]
-  eEditorial* pAuxEditorial = this2;
-              ^~~~~~~~~~~~~
-14:02:20 **** Incremental Build of configuration Debug for project SegundoParcial ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\book.o" "..\\src\\book.c" 
-..\src\book.c: In function 'calcularMonto':
-..\src\book.c:219:25: warning: passing argument 1 of 'eBook_getEditorialId' makes pointer from integer without a cast [-Wint-conversion]
-   eBook_getEditorialId (auxIdEditorial,&auxIdEditorial,editorial);
-                         ^~~~~~~~~~~~~~
-..\src\book.c:168:5: note: expected 'eEditorial * {aka struct <anonymous> *}' but argument is of type 'int'
- int eBook_getEditorialId (eEditorial* arrayEditorial,int* editorialId,char* editorial)
-     ^~~~~~~~~~~~~~~~~~~~
-..\src\book.c:211:14: warning: unused variable 'pAuxEditorial' [-Wunused-variable]
-  eEditorial* pAuxEditorial;
-              ^~~~~~~~~~~~~
-gcc -o SegundoParcial.exe "src\\Controller.o" "src\\LinkedList.o" "src\\Menu.o" "src\\Parser.o" "src\\book.o" "src\\main.o" "src\\utn.o" 
-14:19:44 **** Incremental Build of configuration Debug for project SegundoParcial ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\book.o" "..\\src\\book.c" 
-..\src\book.c: In function 'calcularMonto':
-..\src\book.c:221:23: warning: left-hand operand of comma expression has no effect [-Wunused-value]
-   if(strcmp(("Planeta",editorial)) && precio >= 300)
-                       ^
-..\src\book.c:221:6: error: too few arguments to function 'strcmp'
-   if(strcmp(("Planeta",editorial)) && precio >= 300)
-      ^~~~~~
-In file included from ..\src\book.h:12:0,
-                 from ..\src\book.c:1:
-c:\mingw\include\string.h:77:38: note: declared here
- _CRTIMP __cdecl __MINGW_NOTHROW  int strcmp (const char *, const char *) __MINGW_ATTRIB_PURE;
-                                      ^~~~~~
-..\src\book.c:226:34: warning: left-hand operand of comma expression has no effect [-Wunused-value]
-   if(strcmp(("SIGLO XXI EDITORES",editorial)) && precio <= 200)
-                                  ^
-..\src\book.c:226:6: error: too few arguments to function 'strcmp'
-   if(strcmp(("SIGLO XXI EDITORES",editorial)) && precio <= 200)
-      ^~~~~~
-In file included from ..\src\book.h:12:0,
-                 from ..\src\book.c:1:
-c:\mingw\include\string.h:77:38: note: declared here
- _CRTIMP __cdecl __MINGW_NOTHROW  int strcmp (const char *, const char *) __MINGW_ATTRIB_PURE;
-                                      ^~~~~~
-..\src\book.c:212:6: warning: unused variable 'auxIdEditorial' [-Wunused-variable]
-  int auxIdEditorial;
-      ^~~~~~~~~~~~~~
-14:20:04 **** Incremental Build of configuration Debug for project SegundoParcial ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\book.o" "..\\src\\book.c" 
-..\src\book.c: In function 'calcularMonto':
-..\src\book.c:212:6: warning: unused variable 'auxIdEditorial' [-Wunused-variable]
-  int auxIdEditorial;
-      ^~~~~~~~~~~~~~
-gcc -o SegundoParcial.exe "src\\Controller.o" "src\\LinkedList.o" "src\\Menu.o" "src\\Parser.o" "src\\book.o" "src\\main.o" "src\\utn.o" 
-Info: Nothing to build for SegundoParcial
-14:21:56 **** Incremental Build of configuration Debug for project SegundoParcial ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\book.o" "..\\src\\book.c" 
-..\src\book.c: In function 'calcularMonto':
-..\src\book.c:212:6: warning: unused variable 'auxIdEditorial' [-Wunused-variable]
-  int auxIdEditorial;
-      ^~~~~~~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
 gcc -o SegundoParcial.exe "src\\Controller.o" "src\\LinkedList.o" "src\\Menu.o" "src\\Parser.o" "src\\book.o" "src\\main.o" "src\\utn.o" 
 c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file SegundoParcial.exe: Permission denied
 collect2.exe: error: ld returned 1 exit status
-14:22:00 **** Incremental Build of configuration Debug for project SegundoParcial ****
+14:23:28 **** Incremental Build of configuration Debug for project SegundoParcial ****
 Info: Internal Builder is used for build
 gcc -o SegundoParcial.exe "src\\Controller.o" "src\\LinkedList.o" "src\\Menu.o" "src\\Parser.o" "src\\book.o" "src\\main.o" "src\\utn.o" 
 Info: Nothing to build for SegundoParcial
-14:25:28 **** Incremental Build of configuration Debug for project SegundoParcial ****
+14:25:31 **** Incremental Build of configuration Debug for project SegundoParcial ****
 Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\book.o" "..\\src\\book.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Parser.o" "..\\src\\Parser.c" 
 gcc -o SegundoParcial.exe "src\\Controller.o" "src\\LinkedList.o" "src\\Menu.o" "src\\Parser.o" "src\\book.o" "src\\main.o" "src\\utn.o" 
+Info: Nothing to build for SegundoParcial
+14:26:07 **** Incremental Build of configuration Debug for project SegundoParcial ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+gcc -o SegundoParcial.exe "src\\Controller.o" "src\\LinkedList.o" "src\\Menu.o" "src\\Parser.o" "src\\book.o" "src\\main.o" "src\\utn.o" 
+Info: Nothing to build for SegundoParcial
 Info: Nothing to build for SegundoParcial
 Info: Nothing to build for SegundoParcial
