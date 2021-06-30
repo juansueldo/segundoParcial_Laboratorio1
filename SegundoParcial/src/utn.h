@@ -1,5 +1,27 @@
 #ifndef UTN_H_
 #define UTN_H_
+
+/**
+ * @brief Verifica si el entero ingresado es un numero valido
+ * @param num entero a ser analizado
+ * @return Retorna cero si el entero es valido y -1 si no lo es
+ *
+ */
+int validarEntero(int num);
+/**
+ * @brief Verifica si el flotante ingresado es un numero valido
+ * @param num flotante a ser analizado
+ * @return Retorna cero si el numero flotante es valido y -1 si no lo es
+ *
+ */
+int validarFlotante(float num);
+/**
+ * @brief Verifica si la cadena ingresada es un nombre valido
+ * @param cadena Cadena de caracteres a ser analizada
+ * @return Retorna cero si la cadena es valida y -1 si no lo es
+ *
+ */
+int validarNombre(char* cadena,int longitud);
 int utn_getTexto (char *pString);
 /* @brief Pide el numero al caracter y valida que este
  * @param auxiliarNum toma el dato ingresado por el usuario
@@ -113,6 +135,6 @@ int utn_getMayusMin (char name[], int tam);
  * @return Retorna cero cuando se convierte el caracter
  */
 int utn_getLower(char* letra);
-int isValidNombre(char* cadena,int longitud);
+
 
 #endif /* UTN_H_ */

@@ -57,7 +57,7 @@ int controller_ListBooks(LinkedList* pArrayListBooks)
         	eLibro_getAutor(pAuxLibro, autor);
         	eLibro_getPrecio(pAuxLibro, &precio);
         	eLibro_getEditorial(pAuxLibro, &editorialId);
-        	eLibro_getEditorialId (pAuxLibro,editorialId,editorial);
+        	eLibro_getEditorialDetalle (pAuxLibro,editorialId,editorial);
 
 
             printf("| %5d | %60s | %15s | %10.2f |  %20s |\n", id,titulo,autor, precio,editorial);

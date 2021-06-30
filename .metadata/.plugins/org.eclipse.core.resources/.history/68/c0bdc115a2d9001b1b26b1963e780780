@@ -1,0 +1,83 @@
+/*
+ * movie.h
+ *
+ *  Created on: 23 jun. 2021
+ *      Author: Juan
+ */
+
+#ifndef LIBRO_H_
+#define LIBRO_H_
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include "LinkedList.h"
+#include "utn.h"
+
+#define MAX_NOMBRE 70
+#define DESCUENTO_1 0.20
+#define DESCUENTO_2 0.10
+#define PRECIO_1 300
+#define PRECIO_2 200
+
+typedef struct{
+	int id;
+	char titulo[MAX_NOMBRE];
+	char autor[MAX_NOMBRE];
+	float precio;
+	int editorial;
+}eLibro;
+
+typedef struct{
+	int editorial;
+	char editorialDetalle[MAX_NOMBRE];
+}eEditorial;
+
+/** brief Constructor que obtiene el espacio en memoria para los libros
+ * @return retorna NULL sino se pudo reservar espacio
+ */
+eLibro* eLibro_new();
+/** \brief Nueva estructura de Libros ingresando los valores por parametros.
+ *
+ * @param id parametro que recibe el ID a cargar.
+ * @param titulo parametro que recibe el titulo del libro.
+ * @param autor  parametro que recibe el nombre del autor.
+ * @param precio  parametro que recibe el precio.
+ * @param editorial  parametro que recibe la editorial.
+ * @return this retorna el Libro con los datos que se recibieron por parametro, en caso contrario retorna NULL.
+ *
+ */
+eLibro* eLibro_newParametros(char* id,char* titulo,char* autor, char* precio, char* editorial);
+/** \brief Libera la memoria que se asingno a un libro
+ *
+ * @param this direccion de memoria de un Libro.
+ *
+ */
+void eLibro_delete(eLibro *this);
+
+
+int eLibro_setId(eLibro* this,int id);
+int eLibro_getId(eLibro* this,int* id);
+
+int eLibro_setTitulo(eLibro* this,char* titulo);
+int eLibro_getTitulo(eLibro* this,char* titulo);
+
+
+int eLibro_setAutor(eLibro* this,char* autor);
+int eLibro_getAutor(eLibro* this,char* autor);
+
+
+int eLibro_setPrecio(eLibro* this,float precio);
+int eLibro_getPrecio(eLibro* this,float* precio);
+
+int eLibro_setEditorial(eLibro* this,int editorial);
+int eLibro_getEditorial(eLibro* this,int* editorial);
+
+int eLibro_compareByAutor(void* pThis1, void* pThis2);
+
+int eLibro_getEditorialId (eLibro* this,int editorialId,char* detalleEditorial);
+
+int eLibro_getMontoGenrado (eLibro* this, int dia,int cantidad, float* monto);
+
+void calcularMonto(void* this);
+int eLibro_compareBynombre(void* pThis1, void* pThis2);
+#endif /* LIBRO_H_ */

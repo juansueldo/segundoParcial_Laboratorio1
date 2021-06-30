@@ -58,7 +58,7 @@ int main(void) {
 	        	   }
 	        	   break;
 	          case 4:
-	        	  if(ll_map(listaLibros, calcularMonto)==0)
+	        	  if(ll_map(listaLibros, eLibro_calcularDescuento)==0)
 	        	  {
 	        		  printf("\nSE APLICARON LOS DESCUENTOS CORRESPONDIENTES");
 	        	  }

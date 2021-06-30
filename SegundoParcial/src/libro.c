@@ -42,7 +42,7 @@ eLibro* eLibro_newParametros(char* id,char* titulo,char* autor, char* precio, ch
 int eLibro_setId(eLibro* this,int id)
 {
 	int retorno = -1;
-	if(this != NULL && id >= 0)
+	if(this != NULL && id >= 0 && validarEntero(id)==0)
 	{
 		retorno = 0;
 		this->id = id;
@@ -64,7 +64,7 @@ int eLibro_setTitulo(eLibro* this,char* titulo)
 {
     int retorno = -1;
 
-    if(this != NULL && titulo != NULL)
+    if(this != NULL && titulo != NULL && validarNombre(titulo, MAX_NOMBRE) == 0)
     {
     	strcpy(this->titulo, titulo);
     	retorno = 0;
@@ -91,8 +91,11 @@ int eLibro_setAutor(eLibro* this,char* autor)
 
     if(this != NULL && autor != NULL)
     {
-    	strcpy(this->autor, autor);
-    	retorno = 0;
+    	if(validarNombre(autor, MAX_NOMBRE)==0)
+    	{
+    		strcpy(this->autor, autor);
+    		retorno = 0;
+    	}
     }
 
     return retorno;
@@ -112,7 +115,7 @@ int eLibro_getAutor(eLibro* this,char* autor)
 int eLibro_setPrecio(eLibro* this,float precio)
 {
 	int retorno = -1;
-	if(this != NULL && precio >= 0)
+	if(this != NULL && precio >= 0 && validarFlotante(precio)==0)
 	{
 		retorno = 0;
 		this->precio = precio;
@@ -133,7 +136,7 @@ int eLibro_setEditorial(eLibro* this,int editorial)
 {
     int retorno = -1;
 
-    if(this != NULL && editorial != 0)
+    if(this != NULL && editorial != 0 && validarEntero(editorial)== 0)
     {
     	this->editorial= editorial;
         retorno = 0;
@@ -170,7 +173,7 @@ int eLibro_compareByAutor(void* pThis1, void* pThis2)
 
     return comparar;
 }
-int eLibro_getEditorialId (eLibro* this, int editorialId,char* detalleEditorial)
+int eLibro_getEditorialDetalle (eLibro* this, int editorialId,char* detalleEditorial)
 {
 	int retorno = -1;
 	int auxId;
@@ -208,7 +211,7 @@ int eLibro_getEditorialId (eLibro* this, int editorialId,char* detalleEditorial)
 
 	return retorno;
 }
-void calcularMonto(void* this)
+void eLibro_calcularDescuento(void* this)
 {
 	int editorial;
 	float precio;
