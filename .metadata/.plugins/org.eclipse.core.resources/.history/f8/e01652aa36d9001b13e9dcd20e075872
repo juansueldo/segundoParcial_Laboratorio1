@@ -28,6 +28,7 @@ int controller_ListBooks(LinkedList* pArrayListBooks)
 {
     int retorno = -1;
     int i;
+   // int j;
     int pantalla = 999;
     int respuesta;
     int respuesta2;
@@ -38,6 +39,7 @@ int controller_ListBooks(LinkedList* pArrayListBooks)
     char editorial[MAX_NOMBRE];
     int editorialId;
     eLibro* pAuxLibro = eLibro_new();
+   // eEditorial* pAuxEditorial = NULL;
 
     if(pArrayListBooks != NULL)
     {

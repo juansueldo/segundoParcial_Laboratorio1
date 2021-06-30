@@ -509,3 +509,96 @@ gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\book.o" "..\\src\\book.c"
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
 gcc -o SegundoParcial.exe "src\\Controller.o" "src\\LinkedList.o" "src\\Menu.o" "src\\Parser.o" "src\\book.o" "src\\main.o" "src\\utn.o" 
 Info: Nothing to build for SegundoParcial
+20:05:42 **** Incremental Build of configuration Debug for project SegundoParcial ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utn.o" "..\\src\\utn.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\LinkedList.o" "..\\src\\LinkedList.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\book.o" "..\\src\\book.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Menu.o" "..\\src\\Menu.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Parser.o" "..\\src\\Parser.c" 
+gcc -o SegundoParcial.exe "src\\Controller.o" "src\\LinkedList.o" "src\\Menu.o" "src\\Parser.o" "src\\book.o" "src\\main.o" "src\\utn.o" 
+Info: Nothing to build for SegundoParcial
+20:09:01 **** Incremental Build of configuration Debug for project SegundoParcial ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Parser.o" "..\\src\\Parser.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+..\src\Controller.c: In function 'controller_ListBooks':
+..\src\Controller.c:42:17: warning: unused variable 'pAuxEditorial' [-Wunused-variable]
+     eEditorial* pAuxEditorial = NULL;
+                 ^~~~~~~~~~~~~
+..\src\Controller.c:31:9: warning: unused variable 'j' [-Wunused-variable]
+     int j;
+         ^
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\book.o" "..\\src\\book.c" 
+gcc -o SegundoParcial.exe "src\\Controller.o" "src\\LinkedList.o" "src\\Menu.o" "src\\Parser.o" "src\\book.o" "src\\main.o" "src\\utn.o" 
+Info: Nothing to build for SegundoParcial
+20:53:04 **** Incremental Build of configuration Debug for project SegundoParcial ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Parser.o" "..\\src\\Parser.c" 
+..\src\Parser.c: In function 'parser_BookFromText':
+..\src\Parser.c:13:5: error: unknown type name 'eBook'
+     eBook* pAuxBook = NULL;
+     ^~~~~
+..\src\Parser.c:59:22: warning: implicit declaration of function 'eBook_newParametros' [-Wimplicit-function-declaration]
+           pAuxBook = eBook_newParametros(buffer[0], buffer[1], buffer[2], buffer[3],buffer[4]);
+                      ^~~~~~~~~~~~~~~~~~~
+..\src\Parser.c:59:20: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+           pAuxBook = eBook_newParametros(buffer[0], buffer[1], buffer[2], buffer[3],buffer[4]);
+                    ^
+..\src\Parser.c:61:64: error: 'eBook' undeclared (first use in this function)
+                 if(pAuxBook != NULL && ll_add(pArrayListBook, (eBook*)pAuxBook) == 0)
+                                                                ^~~~~
+..\src\Parser.c:61:64: note: each undeclared identifier is reported only once for each function it appears in
+..\src\Parser.c:61:70: error: expected expression before ')' token
+                 if(pAuxBook != NULL && ll_add(pArrayListBook, (eBook*)pAuxBook) == 0)
+                                                                      ^
+20:53:44 **** Incremental Build of configuration Debug for project SegundoParcial ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\libro.o" "..\\src\\libro.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Parser.o" "..\\src\\Parser.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+..\src\Controller.c: In function 'controller_ListBooks':
+..\src\Controller.c:42:17: warning: unused variable 'pAuxEditorial' [-Wunused-variable]
+     eEditorial* pAuxEditorial = NULL;
+                 ^~~~~~~~~~~~~
+..\src\Controller.c:31:9: warning: unused variable 'j' [-Wunused-variable]
+     int j;
+         ^
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.c" 
+gcc -o SegundoParcial.exe "src\\Controller.o" "src\\LinkedList.o" "src\\Menu.o" "src\\Parser.o" "src\\libro.o" "src\\main.o" "src\\utn.o" 
+Info: Nothing to build for SegundoParcial
+20:56:09 **** Incremental Build of configuration Debug for project SegundoParcial ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+gcc -o SegundoParcial.exe "src\\Controller.o" "src\\LinkedList.o" "src\\Menu.o" "src\\Parser.o" "src\\libro.o" "src\\main.o" "src\\utn.o" 
+Info: Nothing to build for SegundoParcial
+21:01:06 **** Incremental Build of configuration Debug for project SegundoParcial ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\libro.o" "..\\src\\libro.c" 
+..\src\libro.c: In function 'eLibro_getEditorialId':
+..\src\libro.c:180:29: warning: passing argument 2 of 'eLibro_getEditorial' makes pointer from integer without a cast [-Wint-conversion]
+   eLibro_getEditorial(this, auxId);
+                             ^~~~~
+..\src\libro.c:145:5: note: expected 'int *' but argument is of type 'int'
+ int eLibro_getEditorial(eLibro* this,int* editorial)
+     ^~~~~~~~~~~~~~~~~~~
+..\src\libro.c:180:3: warning: 'auxId' may be used uninitialized in this function [-Wmaybe-uninitialized]
+   eLibro_getEditorial(this, auxId);
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+gcc -o SegundoParcial.exe "src\\Controller.o" "src\\LinkedList.o" "src\\Menu.o" "src\\Parser.o" "src\\libro.o" "src\\main.o" "src\\utn.o" 
+21:01:54 **** Incremental Build of configuration Debug for project SegundoParcial ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\libro.o" "..\\src\\libro.c" 
+gcc -o SegundoParcial.exe "src\\Controller.o" "src\\LinkedList.o" "src\\Menu.o" "src\\Parser.o" "src\\libro.o" "src\\main.o" "src\\utn.o" 
+Info: Nothing to build for SegundoParcial
+21:04:59 **** Incremental Build of configuration Debug for project SegundoParcial ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\libro.o" "..\\src\\libro.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Parser.o" "..\\src\\Parser.c" 
+gcc -o SegundoParcial.exe "src\\Controller.o" "src\\LinkedList.o" "src\\Menu.o" "src\\Parser.o" "src\\libro.o" "src\\main.o" "src\\utn.o" 
+Info: Nothing to build for SegundoParcial
